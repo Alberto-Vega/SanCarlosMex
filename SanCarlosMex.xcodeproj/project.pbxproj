@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF35D8F81B2E8A6000FD8E93 /* facebook-flat-vector-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = BF35D8F71B2E8A6000FD8E93 /* facebook-flat-vector-logo.png */; };
+		BF35D8FA1B2E8A6700FD8E93 /* new-twitter-logo-vector.png in Resources */ = {isa = PBXBuildFile; fileRef = BF35D8F91B2E8A6700FD8E93 /* new-twitter-logo-vector.png */; };
 		BF3FF7631B2BF4D40024D8A9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3FF7621B2BF4D40024D8A9 /* DetailViewController.swift */; };
 		BF494F981B2D40820007115A /* dining.JPG in Resources */ = {isa = PBXBuildFile; fileRef = BF494F901B2D40820007115A /* dining.JPG */; };
 		BF494F991B2D40820007115A /* hiking.JPG in Resources */ = {isa = PBXBuildFile; fileRef = BF494F911B2D40820007115A /* hiking.JPG */; };
@@ -16,6 +18,11 @@
 		BF494F9D1B2D40820007115A /* horseRiding.JPG in Resources */ = {isa = PBXBuildFile; fileRef = BF494F951B2D40820007115A /* horseRiding.JPG */; };
 		BF494F9E1B2D40820007115A /* bathing.JPG in Resources */ = {isa = PBXBuildFile; fileRef = BF494F961B2D40820007115A /* bathing.JPG */; };
 		BF494F9F1B2D40820007115A /* tetakawi.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF494F971B2D40820007115A /* tetakawi.jpeg */; };
+		BF494FA11B2D4DF00007115A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF494FA01B2D4DF00007115A /* HomeViewController.swift */; };
+		BF494FA31B2D4E800007115A /* tetakawi3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF494FA21B2D4E800007115A /* tetakawi3.jpg */; };
+		BF494FA51B2D510F0007115A /* tetakawi2.JPG in Resources */ = {isa = PBXBuildFile; fileRef = BF494FA41B2D510F0007115A /* tetakawi2.JPG */; };
+		BF5A3E431B2DDD7C005EB5B4 /* tetakawiSquare.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF5A3E421B2DDD7C005EB5B4 /* tetakawiSquare.jpg */; };
+		BF5A3E451B2DEBB0005EB5B4 /* tetakawiSquare1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF5A3E441B2DEBB0005EB5B4 /* tetakawiSquare1.jpg */; };
 		BFEAEE181B2B912F00C4789D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEAEE171B2B912F00C4789D /* AppDelegate.swift */; };
 		BFEAEE1A1B2B912F00C4789D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEAEE191B2B912F00C4789D /* ViewController.swift */; };
 		BFEAEE1F1B2B912F00C4789D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFEAEE1E1B2B912F00C4789D /* Images.xcassets */; };
@@ -36,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF35D8F71B2E8A6000FD8E93 /* facebook-flat-vector-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook-flat-vector-logo.png"; sourceTree = "<group>"; };
+		BF35D8F91B2E8A6700FD8E93 /* new-twitter-logo-vector.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "new-twitter-logo-vector.png"; sourceTree = "<group>"; };
 		BF3FF7621B2BF4D40024D8A9 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		BF494F901B2D40820007115A /* dining.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dining.JPG; sourceTree = "<group>"; };
 		BF494F911B2D40820007115A /* hiking.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hiking.JPG; sourceTree = "<group>"; };
@@ -45,6 +54,11 @@
 		BF494F951B2D40820007115A /* horseRiding.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = horseRiding.JPG; sourceTree = "<group>"; };
 		BF494F961B2D40820007115A /* bathing.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bathing.JPG; sourceTree = "<group>"; };
 		BF494F971B2D40820007115A /* tetakawi.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tetakawi.jpeg; sourceTree = "<group>"; };
+		BF494FA01B2D4DF00007115A /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BF494FA21B2D4E800007115A /* tetakawi3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tetakawi3.jpg; sourceTree = "<group>"; };
+		BF494FA41B2D510F0007115A /* tetakawi2.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tetakawi2.JPG; sourceTree = "<group>"; };
+		BF5A3E421B2DDD7C005EB5B4 /* tetakawiSquare.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tetakawiSquare.jpg; sourceTree = "<group>"; };
+		BF5A3E441B2DEBB0005EB5B4 /* tetakawiSquare1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tetakawiSquare1.jpg; sourceTree = "<group>"; };
 		BFEAEE121B2B912F00C4789D /* SanCarlosMex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SanCarlosMex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFEAEE161B2B912F00C4789D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFEAEE171B2B912F00C4789D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +117,8 @@
 				BFEAEE3D1B2BBCAF00C4789D /* Views */,
 				BFEAEE1E1B2B912F00C4789D /* Images.xcassets */,
 				BFEAEE201B2B912F00C4789D /* LaunchScreen.xib */,
+				BF35D8F91B2E8A6700FD8E93 /* new-twitter-logo-vector.png */,
+				BF35D8F71B2E8A6000FD8E93 /* facebook-flat-vector-logo.png */,
 				BF494F901B2D40820007115A /* dining.JPG */,
 				BF494F911B2D40820007115A /* hiking.JPG */,
 				BF494F921B2D40820007115A /* kayaking.JPG */,
@@ -110,7 +126,11 @@
 				BF494F941B2D40820007115A /* boatRides.JPG */,
 				BF494F951B2D40820007115A /* horseRiding.JPG */,
 				BF494F961B2D40820007115A /* bathing.JPG */,
+				BF5A3E441B2DEBB0005EB5B4 /* tetakawiSquare1.jpg */,
+				BF5A3E421B2DDD7C005EB5B4 /* tetakawiSquare.jpg */,
 				BF494F971B2D40820007115A /* tetakawi.jpeg */,
+				BF494FA41B2D510F0007115A /* tetakawi2.JPG */,
+				BF494FA21B2D4E800007115A /* tetakawi3.jpg */,
 				BFEAEE151B2B912F00C4789D /* Supporting Files */,
 			);
 			path = SanCarlosMex;
@@ -152,6 +172,7 @@
 		BFEAEE3B1B2BBC5900C4789D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BF494FA01B2D4DF00007115A /* HomeViewController.swift */,
 				BFEAEE191B2B912F00C4789D /* ViewController.swift */,
 				BF3FF7621B2BF4D40024D8A9 /* DetailViewController.swift */,
 			);
@@ -247,13 +268,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF494F9F1B2D40820007115A /* tetakawi.jpeg in Resources */,
+				BF5A3E451B2DEBB0005EB5B4 /* tetakawiSquare1.jpg in Resources */,
 				BFEAEE221B2B912F00C4789D /* LaunchScreen.xib in Resources */,
+				BF5A3E431B2DDD7C005EB5B4 /* tetakawiSquare.jpg in Resources */,
 				BF494F991B2D40820007115A /* hiking.JPG in Resources */,
 				BF494F9B1B2D40820007115A /* sightseeing.JPG in Resources */,
+				BF35D8FA1B2E8A6700FD8E93 /* new-twitter-logo-vector.png in Resources */,
 				BF494F981B2D40820007115A /* dining.JPG in Resources */,
+				BF494FA31B2D4E800007115A /* tetakawi3.jpg in Resources */,
 				BFEAEE411B2BCB4F00C4789D /* Main.storyboard in Resources */,
 				BFEAEE1F1B2B912F00C4789D /* Images.xcassets in Resources */,
+				BF494FA51B2D510F0007115A /* tetakawi2.JPG in Resources */,
 				BF494F9E1B2D40820007115A /* bathing.JPG in Resources */,
+				BF35D8F81B2E8A6000FD8E93 /* facebook-flat-vector-logo.png in Resources */,
 				BF494F9C1B2D40820007115A /* boatRides.JPG in Resources */,
 				BF494F9A1B2D40820007115A /* kayaking.JPG in Resources */,
 				BF494F9D1B2D40820007115A /* horseRiding.JPG in Resources */,
@@ -274,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF494FA11B2D4DF00007115A /* HomeViewController.swift in Sources */,
 				BFEAEE381B2BBBF800C4789D /* Activity.swift in Sources */,
 				BFEAEE1A1B2B912F00C4789D /* ViewController.swift in Sources */,
 				BFEAEE181B2B912F00C4789D /* AppDelegate.swift in Sources */,
