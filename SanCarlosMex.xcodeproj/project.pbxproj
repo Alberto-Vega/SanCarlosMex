@@ -23,6 +23,8 @@
 		BF494FA51B2D510F0007115A /* tetakawi2.JPG in Resources */ = {isa = PBXBuildFile; fileRef = BF494FA41B2D510F0007115A /* tetakawi2.JPG */; };
 		BF5A3E431B2DDD7C005EB5B4 /* tetakawiSquare.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF5A3E421B2DDD7C005EB5B4 /* tetakawiSquare.jpg */; };
 		BF5A3E451B2DEBB0005EB5B4 /* tetakawiSquare1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF5A3E441B2DEBB0005EB5B4 /* tetakawiSquare1.jpg */; };
+		BFBC18651B54BC4C001D6F02 /* ActivitiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBC18641B54BC4C001D6F02 /* ActivitiesTableViewController.swift */; };
+		BFBC18671B556ED2001D6F02 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBC18661B556ED2001D6F02 /* Restaurant.swift */; };
 		BFEAEE181B2B912F00C4789D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEAEE171B2B912F00C4789D /* AppDelegate.swift */; };
 		BFEAEE1A1B2B912F00C4789D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEAEE191B2B912F00C4789D /* ViewController.swift */; };
 		BFEAEE1F1B2B912F00C4789D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFEAEE1E1B2B912F00C4789D /* Images.xcassets */; };
@@ -59,6 +61,8 @@
 		BF494FA41B2D510F0007115A /* tetakawi2.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tetakawi2.JPG; sourceTree = "<group>"; };
 		BF5A3E421B2DDD7C005EB5B4 /* tetakawiSquare.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tetakawiSquare.jpg; sourceTree = "<group>"; };
 		BF5A3E441B2DEBB0005EB5B4 /* tetakawiSquare1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tetakawiSquare1.jpg; sourceTree = "<group>"; };
+		BFBC18641B54BC4C001D6F02 /* ActivitiesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitiesTableViewController.swift; sourceTree = "<group>"; };
+		BFBC18661B556ED2001D6F02 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		BFEAEE121B2B912F00C4789D /* SanCarlosMex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SanCarlosMex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFEAEE161B2B912F00C4789D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFEAEE171B2B912F00C4789D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -165,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				BFEAEE371B2BBBF800C4789D /* Activity.swift */,
+				BFBC18661B556ED2001D6F02 /* Restaurant.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -173,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				BF494FA01B2D4DF00007115A /* HomeViewController.swift */,
+				BFBC18641B54BC4C001D6F02 /* ActivitiesTableViewController.swift */,
 				BFEAEE191B2B912F00C4789D /* ViewController.swift */,
 				BF3FF7621B2BF4D40024D8A9 /* DetailViewController.swift */,
 			);
@@ -231,7 +237,9 @@
 		BFEAEE0A1B2B912F00C4789D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Alberto Vega Gonzalez";
 				TargetAttributes = {
 					BFEAEE111B2B912F00C4789D = {
@@ -301,8 +309,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFBC18651B54BC4C001D6F02 /* ActivitiesTableViewController.swift in Sources */,
 				BF494FA11B2D4DF00007115A /* HomeViewController.swift in Sources */,
 				BFEAEE381B2BBBF800C4789D /* Activity.swift in Sources */,
+				BFBC18671B556ED2001D6F02 /* Restaurant.swift in Sources */,
 				BFEAEE1A1B2B912F00C4789D /* ViewController.swift in Sources */,
 				BFEAEE181B2B912F00C4789D /* AppDelegate.swift in Sources */,
 				BF3FF7631B2BF4D40024D8A9 /* DetailViewController.swift in Sources */,
@@ -360,6 +370,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -426,6 +437,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SanCarlosMex/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -436,6 +448,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SanCarlosMex/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -454,6 +467,7 @@
 				);
 				INFOPLIST_FILE = SanCarlosMexTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SanCarlosMex.app/SanCarlosMex";
 			};
@@ -469,6 +483,7 @@
 				);
 				INFOPLIST_FILE = SanCarlosMexTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SanCarlosMex.app/SanCarlosMex";
 			};

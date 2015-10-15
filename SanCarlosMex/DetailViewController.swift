@@ -15,14 +15,18 @@ class DetailViewController: UIViewController {
   @IBOutlet weak var activityNameLabel: UILabel!
   @IBOutlet weak var photoDescriptionLabel: UILabel!
   
-  var selectedActivity: Activity!
+  var selectedActivity: Activity?
+  var praise: String?
+  
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    print(praise)
+    print("The selected activity in DetailViewController: \(selectedActivity)")
     navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Action, target: self, action: "shareTapped")
-    self.activityNameLabel.text = self.selectedActivity.name
-    self.photoDescriptionLabel.text = self.selectedActivity.randomDescription()
-    self.activityPhoto.image = self.selectedActivity.image
+    self.activityNameLabel.text = self.selectedActivity?.name
+    self.photoDescriptionLabel.text = self.selectedActivity?.createAndSelectARandomDescription()
+    self.activityPhoto.image = self.selectedActivity?.image
   }
   
   override func didReceiveMemoryWarning() {
@@ -37,7 +41,7 @@ class DetailViewController: UIViewController {
   
   func shareOnFacebookTapped()  {
     let vc = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
-    vc.setInitialText("Look at this beautiful place! It's San Carlos, Mexico")
+    vc.setInitialText("Check out this beautiful place! It's San Carlos, Mexico")
     vc.addImage(activityPhoto.image!)
     vc.addURL(NSURL(string: "http://www.discoversancarlos.org/home"))
     presentViewController(vc, animated: true, completion: nil)
@@ -45,7 +49,7 @@ class DetailViewController: UIViewController {
   
   func shareOnTwitterTapped() {
     let vc = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
-    vc.setInitialText("Look at this beautiful place! It's San Carlos, Mexico")
+    vc.setInitialText("Check out this beautiful place! It's San Carlos, Mexico")
     vc.addImage(activityPhoto.image!)
     vc.addURL(NSURL(string: "http://www.discoversancarlos.org/home"))
     presentViewController(vc, animated: true, completion: nil)

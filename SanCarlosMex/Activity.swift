@@ -12,7 +12,7 @@ struct Activity {
   var name = " "
   var image = UIImage(named: "")
   
-  func randomDescription() -> String  {
+  func createAndSelectARandomDescription() -> String  {
     let randomNumber = Int(arc4random_uniform(UInt32(6)))
     var randomDescription:String
     
@@ -31,6 +31,10 @@ struct Activity {
     }
     return randomDescription
   }
-  
-  
 }
+
+
+
+
+
+
