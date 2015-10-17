@@ -23,7 +23,9 @@
 		BF494FA51B2D510F0007115A /* tetakawi2.JPG in Resources */ = {isa = PBXBuildFile; fileRef = BF494FA41B2D510F0007115A /* tetakawi2.JPG */; };
 		BF5A3E431B2DDD7C005EB5B4 /* tetakawiSquare.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF5A3E421B2DDD7C005EB5B4 /* tetakawiSquare.jpg */; };
 		BF5A3E451B2DEBB0005EB5B4 /* tetakawiSquare1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF5A3E441B2DEBB0005EB5B4 /* tetakawiSquare1.jpg */; };
-		BFBC18651B54BC4C001D6F02 /* ActivitiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBC18641B54BC4C001D6F02 /* ActivitiesTableViewController.swift */; };
+		BF767D4E1BD1E85F0071B173 /* Hotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF767D4C1BD1E85F0071B173 /* Hotel.swift */; settings = {ASSET_TAGS = (); }; };
+		BF767D4F1BD1E85F0071B173 /* Adventure.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF767D4D1BD1E85F0071B173 /* Adventure.swift */; settings = {ASSET_TAGS = (); }; };
+		BFBC18651B54BC4C001D6F02 /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBC18641B54BC4C001D6F02 /* CategoriesTableViewController.swift */; };
 		BFBC18671B556ED2001D6F02 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBC18661B556ED2001D6F02 /* Restaurant.swift */; };
 		BFEAEE181B2B912F00C4789D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEAEE171B2B912F00C4789D /* AppDelegate.swift */; };
 		BFEAEE1A1B2B912F00C4789D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEAEE191B2B912F00C4789D /* ViewController.swift */; };
@@ -32,6 +34,8 @@
 		BFEAEE2E1B2B912F00C4789D /* SanCarlosMexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEAEE2D1B2B912F00C4789D /* SanCarlosMexTests.swift */; };
 		BFEAEE381B2BBBF800C4789D /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEAEE371B2BBBF800C4789D /* Activity.swift */; };
 		BFEAEE411B2BCB4F00C4789D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFEAEE401B2BCB4F00C4789D /* Main.storyboard */; };
+		BFF74F851BD08FF60028C638 /* PointOfInterest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF74F841BD08FF60028C638 /* PointOfInterest.swift */; settings = {ASSET_TAGS = (); }; };
+		BFF74F871BD0B91C0028C638 /* Beaches.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF74F861BD0B91C0028C638 /* Beaches.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +65,9 @@
 		BF494FA41B2D510F0007115A /* tetakawi2.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tetakawi2.JPG; sourceTree = "<group>"; };
 		BF5A3E421B2DDD7C005EB5B4 /* tetakawiSquare.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tetakawiSquare.jpg; sourceTree = "<group>"; };
 		BF5A3E441B2DEBB0005EB5B4 /* tetakawiSquare1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tetakawiSquare1.jpg; sourceTree = "<group>"; };
-		BFBC18641B54BC4C001D6F02 /* ActivitiesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitiesTableViewController.swift; sourceTree = "<group>"; };
+		BF767D4C1BD1E85F0071B173 /* Hotel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hotel.swift; sourceTree = "<group>"; };
+		BF767D4D1BD1E85F0071B173 /* Adventure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Adventure.swift; sourceTree = "<group>"; };
+		BFBC18641B54BC4C001D6F02 /* CategoriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewController.swift; sourceTree = "<group>"; };
 		BFBC18661B556ED2001D6F02 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		BFEAEE121B2B912F00C4789D /* SanCarlosMex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SanCarlosMex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFEAEE161B2B912F00C4789D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,6 +80,8 @@
 		BFEAEE2D1B2B912F00C4789D /* SanCarlosMexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanCarlosMexTests.swift; sourceTree = "<group>"; };
 		BFEAEE371B2BBBF800C4789D /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		BFEAEE401B2BCB4F00C4789D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BFF74F841BD08FF60028C638 /* PointOfInterest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointOfInterest.swift; sourceTree = "<group>"; };
+		BFF74F861BD0B91C0028C638 /* Beaches.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beaches.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +125,7 @@
 			children = (
 				BFEAEE171B2B912F00C4789D /* AppDelegate.swift */,
 				BFEAEE3B1B2BBC5900C4789D /* Controllers */,
-				BFEAEE3A1B2BBC4700C4789D /* Model */,
+				BFEAEE3A1B2BBC4700C4789D /* Models */,
 				BFEAEE3D1B2BBCAF00C4789D /* Views */,
 				BFEAEE1E1B2B912F00C4789D /* Images.xcassets */,
 				BFEAEE201B2B912F00C4789D /* LaunchScreen.xib */,
@@ -165,20 +173,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		BFEAEE3A1B2BBC4700C4789D /* Model */ = {
+		BFEAEE3A1B2BBC4700C4789D /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				BFEAEE371B2BBBF800C4789D /* Activity.swift */,
+				BFF74F841BD08FF60028C638 /* PointOfInterest.swift */,
 				BFBC18661B556ED2001D6F02 /* Restaurant.swift */,
+				BFF74F861BD0B91C0028C638 /* Beaches.swift */,
+				BF767D4C1BD1E85F0071B173 /* Hotel.swift */,
+				BF767D4D1BD1E85F0071B173 /* Adventure.swift */,
 			);
-			name = Model;
+			name = Models;
 			sourceTree = "<group>";
 		};
 		BFEAEE3B1B2BBC5900C4789D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				BF494FA01B2D4DF00007115A /* HomeViewController.swift */,
-				BFBC18641B54BC4C001D6F02 /* ActivitiesTableViewController.swift */,
+				BFBC18641B54BC4C001D6F02 /* CategoriesTableViewController.swift */,
 				BFEAEE191B2B912F00C4789D /* ViewController.swift */,
 				BF3FF7621B2BF4D40024D8A9 /* DetailViewController.swift */,
 			);
@@ -309,13 +321,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFBC18651B54BC4C001D6F02 /* ActivitiesTableViewController.swift in Sources */,
+				BF767D4F1BD1E85F0071B173 /* Adventure.swift in Sources */,
+				BF767D4E1BD1E85F0071B173 /* Hotel.swift in Sources */,
+				BFBC18651B54BC4C001D6F02 /* CategoriesTableViewController.swift in Sources */,
 				BF494FA11B2D4DF00007115A /* HomeViewController.swift in Sources */,
 				BFEAEE381B2BBBF800C4789D /* Activity.swift in Sources */,
 				BFBC18671B556ED2001D6F02 /* Restaurant.swift in Sources */,
+				BFF74F871BD0B91C0028C638 /* Beaches.swift in Sources */,
 				BFEAEE1A1B2B912F00C4789D /* ViewController.swift in Sources */,
 				BFEAEE181B2B912F00C4789D /* AppDelegate.swift in Sources */,
 				BF3FF7631B2BF4D40024D8A9 /* DetailViewController.swift in Sources */,
+				BFF74F851BD08FF60028C638 /* PointOfInterest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

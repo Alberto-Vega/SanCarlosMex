@@ -8,14 +8,16 @@
 
 import UIKit
 
-class Restaurant {
-  var name: String
-  var address: String
-  var image: UIImage?
+class Restaurant: PointOfInterest {
   
-  init(name: String, address: String, image: UIImage) {
-    self.name = name
-    self.address = address
-    self.image = image
+  var cuisine: String
+  var phone: String
+  
+  
+  init(name: String, description: String, address: String, features: String, hours: String, notes: String, image: String, cuisine: String, phone: String) {
+    self.cuisine = cuisine
+    self.phone = phone
+    
+    super.init(name: name, description: description, address: address, features: features, hours: hours, notes: notes, image: image)
   }
 }

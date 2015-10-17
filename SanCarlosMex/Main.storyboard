@@ -268,10 +268,10 @@
             </objects>
             <point key="canvasLocation" x="-258" y="390"/>
         </scene>
-        <!--Activities Table View Controller-->
+        <!--Categories Table View Controller-->
         <scene sceneID="sJb-tZ-RVA">
             <objects>
-                <tableViewController id="hRr-g7-vkg" customClass="ActivitiesTableViewController" customModule="SanCarlosMex" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="hRr-g7-vkg" customClass="CategoriesTableViewController" customModule="SanCarlosMex" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="tgb-87-mMZ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -298,7 +298,7 @@
                                 </tableViewCellContentView>
                                 <animations/>
                                 <connections>
-                                    <segue destination="aKx-sJ-VIs" kind="show" identifier="&quot;ShowDetailViewController&quot;" id="Xgu-f3-deQ"/>
+                                    <segue destination="aKx-sJ-VIs" kind="show" identifier="ShowDetailViewController" id="Xgu-f3-deQ"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -319,7 +319,6 @@
         <!--Navigation Controller-->
         <scene sceneID="icp-am-PQZ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tJJ-Mw-v0v" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="96o-Fs-8lc" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ra9-DG-wzS">
@@ -332,6 +331,7 @@
                         <segue destination="hRr-g7-vkg" kind="relationship" relationship="rootViewController" id="pOo-vz-2vz"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tJJ-Mw-v0v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="452" y="390"/>
         </scene>
