@@ -98,6 +98,11 @@ class CategoriesTableViewController: UITableViewController {
     
   }
   
+  func createBeaches() {
+    let piedrasPintas = Beach(name: "Piedras Pintas", description: "This is another great location for snorkeling, diving and kayaking. Snorkeling and diving are good up both sides of the cove.", address: "To get here by car, pass the RV park on your right, drive over the topes, and then turn left before starting up the hill towards the Mirador.  Drive down a dirt road to the first beach in a string of little coves and sandy beaches.", features: "kayaking.JPG", hours: "No hour restrictions", notes: "A second cove and beach are further to the left.There are no shade structures on this beach, so bring an umbrella. There are also no facilities. There is plenty of room to park.", image: "kayaking.JPG", experience: "This is another great location for snorkeling, diving and kayaking. Snorkeling and diving are good up both sides of the cove.")
+    let marinaTerraBeachClub = Beach(name: "Marinaterra Beach Club", description: "This is a great place to snorkel, dive, swim and kayak. It is a beautiful quiet area.", address: "Take the main road past the MarinaTerra Hotel, and then turn left at the roundabout and continue to follow the road towards the water", features: "This is a great place to snorkel, dive, swim and kayak. You can rent kayaks from the Beach Club (singles and doubles)." hours: "No hour restrictions", notes: "They do not rent snorkel equipment, so bring it with you if you want to snorkel. During jellyfish season, there tends to be a lot in this area, so take care.", image: "kayaking.JPG", experience: "http://www.whatsupsancarlos.com/beaches-san-carlos-mexico/")
+  }
+  
   
 //     MARK: - Navigation
 
