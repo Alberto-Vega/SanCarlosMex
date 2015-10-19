@@ -15,18 +15,18 @@ class DetailViewController: UIViewController {
   @IBOutlet weak var activityNameLabel: UILabel!
   @IBOutlet weak var photoDescriptionLabel: UILabel!
   
-  var selectedActivity: Activity?
+  var selectedCategory: Category?
   var praise: String?
   
   
   override func viewDidLoad() {
     super.viewDidLoad()
     print(praise)
-    print("The selected activity in DetailViewController: \(selectedActivity)")
+    print("The selected activity in DetailViewController: \(selectedCategory)")
     navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Action, target: self, action: "shareTapped")
-    self.activityNameLabel.text = self.selectedActivity?.name
-    self.photoDescriptionLabel.text = self.selectedActivity?.createAndSelectARandomDescription()
-    self.activityPhoto.image = self.selectedActivity?.image
+    self.activityNameLabel.text = self.selectedCategory?.name
+    self.photoDescriptionLabel.text = self.selectedCategory?.name
+    self.activityPhoto.image = self.selectedCategory?.image
   }
   
   override func didReceiveMemoryWarning() {
