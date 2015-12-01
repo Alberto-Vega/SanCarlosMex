@@ -8,17 +8,24 @@
 
 import UIKit
 
+typealias AddCategoriesClosure = ()-> [Category]
+
 class CategoryItemsTableViewController: UITableViewController {
   
+  var addCategoryItems: AddCategoriesClosure?
   var selectedCategory: Category?
-  var praise: String?
+  var testData: String?
+  var testPointsOfInterest: [PointOfInterest]?
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
       print("The category passed is \(selectedCategory?.name)")
       if let selected = selectedCategory {
-      print("Number of restaurants: \(selected.pointsOfInterest.count)")
+      print("Number of restaurants: \(selected.pointsOfInterest!.count)")
+        print(testData)
+        
+        print("Test points of interest in DetailTableView: \(testPointsOfInterest)")
       }
 
         // Uncomment the following line to preserve selection between presentations
@@ -45,14 +52,13 @@ class CategoryItemsTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
 //        return ((selectedCategory?.pointsOfInterest.count)! + 10)
-      return 10
+      return selectedCategory!.pointsOfInterest!.count
     }
 
-  
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("CategoryItem", forIndexPath: indexPath)
       let index = indexPath.row
-      let selectedPointOfInterest = self.selectedCategory?.pointsOfInterest[index]
+      let selectedPointOfInterest = self.selectedCategory?.pointsOfInterest![index]
       let pointOfInterestNameTextLabel = cell.viewWithTag(2) as! UILabel
        pointOfInterestNameTextLabel.text = selectedPointOfInterest?.name
         return cell
@@ -104,6 +110,4 @@ class CategoryItemsTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
       }
     }
-
-
 }

@@ -8,12 +8,13 @@
 
 import UIKit
 
+
 class CategoriesTableViewController: UITableViewController {
 
   @IBOutlet var mainMenuTableView: UITableView!
   
   
-  
+    var addCategoryItems: AddCategoriesClosure?
   var categories = [Category]()
 //  var categories = [Activity]()
   var restaurants = [Restaurant]()
@@ -22,7 +23,7 @@ class CategoriesTableViewController: UITableViewController {
   var adventures = [Adventure]()
   
 
-  var praise = "You are really good at this"
+  var testData = "This string was passed from Categories TableViewController"
   
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +32,12 @@ class CategoriesTableViewController: UITableViewController {
       createBeaches()
 //      createRestaurants()
       createCategories()
+//        self.addCategoryItems = {() -> [Category]  in
+//         self.createCategories()
+//            return self.categories
+//        }
+        print("In view did load we have category Items: \(categories[0].pointsOfInterest!.count)")
+        print("In view did load we have categories: \(categories.count)")
   }
 
     override func didReceiveMemoryWarning() {
@@ -98,7 +105,7 @@ class CategoriesTableViewController: UITableViewController {
 //  }
   
   func createRestaurants() {
-    let bamboo = Restaurant(name: "Bamboo", description: "Asian Food", address: "Blvd Gabriel Estrada 137", features: "Bamboo also serves beer and wine and delivers anywhere in San Carlos", hours: "Wednesday trough Monday noon to 8pm", notes: "Located just across the street from Marina Terra", image: "dining.JPG", cuisine: "Bamboo serves a wide range of asia cuisine treats including Chines and Japanese menu items", phone: "622 226 1225")
+    let bamboo = Restaurant(name: "Bamboo", description: "Asian Food", address: "Blvd Gabriel Estrada 137", features: "Bamboo also serves beer and wine and delivers anywhere in San Carlos", hours: "Wednesday trough Monday noon to 8pm", notes: "Located just across the street from Marina Terra", image: "dining.JPG", cuisine: "Bamboo serves a wide range of asia cuisine treats including Chinese and Japanese menu items", phone: "622 226 1225")
     let piccolo = Restaurant(name: "Piccolo", description: "Italian Food", address: "Beltrones Avenue, San Carlos, Mexico", features: "Italian", hours: "Wed - Sat 6:30 pm - 11:00 pm", notes: "http://www.siestarealty.com/san_carlos_sonora_restaurants_bars_coffee.html", image: "dining.JPG", cuisine: "Italian", phone: "622-226-0503")
     restaurants += [bamboo, piccolo]
     print("The number of restaurants created: \(restaurants.count)")
@@ -113,14 +120,17 @@ class CategoriesTableViewController: UITableViewController {
 
   }
   
-  func createCategories () {
+    func createCategories ()-> [Category] {
     
     let restaurantCategory = Category(name: "Restaurants", image: "dining.JPG", pointsofInterest: restaurants)
     let beachesCategory = Category(name: "Beaches", image: "kayaking.JPG", pointsofInterest: beaches)
     
-    categories += [restaurantCategory,beachesCategory]
+     categories += [restaurantCategory, beachesCategory]
+     print("The number of categories in the array is \(categories.count)")
+    print("In createCategories func restaurants have categories: \(categories[0].pointsOfInterest!.count) in the categories array")
+
+    return categories
     
-    print("The number of categories in the array is \(categories.count)")
 
   }
   
@@ -133,15 +143,23 @@ class CategoriesTableViewController: UITableViewController {
       
        let indexPath = self.tableView.indexPathForSelectedRow
         if let selectedRow = indexPath?.row {
+            print("The selected row is \(selectedRow)")
        let selectedCategory = self.categories[selectedRow]
         print("the selected library in table view: \(selectedCategory.name)")
       CategoryItemsTableViewController.selectedCategory = selectedCategory
-        CategoryItemsTableViewController.praise = praise
-        }
+          
+//      CategoryItemsTableViewController.testPointsOfInterest = selectedCategory.pointsOfInterest
+      CategoryItemsTableViewController.testPointsOfInterest = self.categories[0].pointsOfInterest
+            
+            print("The point of interest items for testPointsOfInteres: \(self.categories[0].pointsOfInterest!.count)")
+        CategoryItemsTableViewController.testData = testData
+            
+            CategoryItemsTableViewController.addCategoryItems = self.addCategoryItems
       }
       }
 //         Get the new view controller using segue.destinationViewController.
 //         Pass the selected object to the new view controller.
     
     }
+}
 }
