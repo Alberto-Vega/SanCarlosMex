@@ -59,8 +59,10 @@ class CategoryItemsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("CategoryItem", forIndexPath: indexPath)
       let index = indexPath.row
       let selectedPointOfInterest = self.selectedCategory?.pointsOfInterest![index]
-      let pointOfInterestNameTextLabel = cell.viewWithTag(2) as! UILabel
-       pointOfInterestNameTextLabel.text = selectedPointOfInterest?.name
+      let pointOfInterestNameLabel = cell.viewWithTag(2) as! UILabel
+       pointOfInterestNameLabel.text = selectedPointOfInterest?.name
+        let pointOfInterestDescriptionLabel = cell.viewWithTag(1) as! UILabel
+        pointOfInterestDescriptionLabel.text = selectedPointOfInterest?.description
         return cell
     }
     
