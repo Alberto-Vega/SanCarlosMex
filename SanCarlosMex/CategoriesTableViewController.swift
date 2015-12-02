@@ -27,6 +27,8 @@ class CategoriesTableViewController: UITableViewController {
   
     override func viewDidLoad() {
         super.viewDidLoad()
+        mainMenuTableView.backgroundView = UIImageView(image: UIImage(named: "tetakawi3.jpg"))
+        mainMenuTableView.backgroundView!.contentMode = UIViewContentMode.ScaleAspectFill
 //      createActivities()
       createRestaurants()
       createBeaches()
@@ -58,52 +60,18 @@ class CategoriesTableViewController: UITableViewController {
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCellWithIdentifier("CategoryListItem", forIndexPath: indexPath)
     let index = indexPath.row
+    
+    if(indexPath.row % 2 == 0) {
+    cell.backgroundColor = UIColor.clearColor()
+    } else {
+        
+    }
     let selectedActivity = self.categories[index]
     let activityNameTextLabel = cell.viewWithTag(1) as! UILabel
     activityNameTextLabel.text = selectedActivity.name
     return cell
   }
-  
-//  func createActivities()-> [Activity] {
-//        
-//    var boatRides = Activity()
-//    boatRides.name = "Boat Rides"
-//    boatRides.image = UIImage(named: "boatRides.JPG")
-//    categories.append(boatRides)
-//    
-//    var horsebackRiding = Activity()
-//    horsebackRiding.name = "Horse Riding"
-//    horsebackRiding.image = UIImage(named:"horseRiding.JPG")
-//    categories.append(horsebackRiding)
-//    
-//    var kayaking = Activity()
-//    kayaking.name = "Kayaking"
-//    kayaking.image = UIImage(named: "kayaking.JPG")
-//    categories.append(kayaking)
-//    
-//    var hiking = Activity()
-//    hiking.name = "Hiking"
-//    hiking.image = UIImage(named: "hiking.JPG")
-//    categories.append(hiking)
-//    
-//    var dining = Activity()
-//    dining.name = "Dining"
-//    dining.image = UIImage(named: "dining.JPG")
-//    categories.append(dining)
-//    
-//    var sightseeing = Activity()
-//    sightseeing.name = "Sightseeing"
-//    sightseeing.image = UIImage(named: "sightseeing.JPG")
-//    categories.append(sightseeing)
-//    
-//    var bathing = Activity()
-//    bathing.name = "Bathing"
-//    bathing.image = UIImage(named: "bathing.JPG")
-//    categories.append(bathing)
-//    
-//    return categories
-//  }
-  
+
   func createRestaurants() {
     let bamboo = Restaurant(name: "Bamboo", description: "Asian Food", address: "Blvd Gabriel Estrada 137", features: "Bamboo also serves beer and wine and delivers anywhere in San Carlos", hours: "Wednesday trough Monday noon to 8pm", notes: "Located just across the street from Marina Terra", image: "dining.JPG", cuisine: "Bamboo serves a wide range of asia cuisine treats including Chinese and Japanese menu items", phone: "622 226 1225")
     let piccolo = Restaurant(name: "Piccolo", description: "Italian Food", address: "Beltrones Avenue, San Carlos, Mexico", features: "Italian", hours: "Wed - Sat 6:30 pm - 11:00 pm", notes: "http://www.siestarealty.com/san_carlos_sonora_restaurants_bars_coffee.html", image: "dining.JPG", cuisine: "Italian", phone: "622-226-0503")
@@ -149,9 +117,9 @@ class CategoriesTableViewController: UITableViewController {
       CategoryItemsTableViewController.selectedCategory = selectedCategory
           
 //      CategoryItemsTableViewController.testPointsOfInterest = selectedCategory.pointsOfInterest
-      CategoryItemsTableViewController.testPointsOfInterest = self.categories[0].pointsOfInterest
+      CategoryItemsTableViewController.pointsOfInterest = self.categories[0].pointsOfInterest
             
-            print("The point of interest items for testPointsOfInteres: \(self.categories[0].pointsOfInterest!.count)")
+            print("The point of interest items for testPointsOfInteres: \(self.categories[0].pointsOfInterest?.count)")
         CategoryItemsTableViewController.testData = testData
             
             CategoryItemsTableViewController.addCategoryItems = self.addCategoryItems
