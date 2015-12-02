@@ -34,45 +34,14 @@
                                         <nil key="highlightedColor"/>
                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jK8-II-Jjh">
-                                        <rect key="frame" x="0.0" y="0.0" width="130" height="30"/>
-                                        <animations/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="UEv-fa-f6m"/>
-                                            <constraint firstAttribute="width" constant="130" id="c1A-dt-Qa4"/>
-                                        </constraints>
-                                    </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNn-Fx-nGT">
-                                        <rect key="frame" x="0.0" y="38" width="130" height="30"/>
-                                        <animations/>
-                                        <color key="backgroundColor" red="0.0126279194" green="0.42399219069999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="86" id="0Mw-yo-Plj"/>
-                                            <constraint firstAttribute="width" constant="130" id="RJt-2A-bTb"/>
-                                            <constraint firstAttribute="height" constant="30" id="g6S-bT-SVB"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="0Mw-yo-Plj"/>
-                                            </mask>
-                                        </variation>
-                                    </label>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="0.90971936673157905" alpha="0.41000000000000003" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="centerX" secondItem="s26-nP-6cZ" secondAttribute="centerX" id="2zh-Y9-MS3"/>
                                     <constraint firstAttribute="centerY" secondItem="s26-nP-6cZ" secondAttribute="centerY" id="4vI-J1-MMJ"/>
-                                    <constraint firstItem="RNn-Fx-nGT" firstAttribute="top" secondItem="jK8-II-Jjh" secondAttribute="bottom" constant="8" id="6jC-o9-Gev"/>
                                     <constraint firstAttribute="width" secondItem="H7I-xN-CAy" secondAttribute="height" multiplier="600:235" constant="4" id="J2O-50-Etd"/>
                                     <constraint firstAttribute="bottom" secondItem="s26-nP-6cZ" secondAttribute="bottom" constant="40" id="K0g-22-3HC"/>
-                                    <constraint firstItem="RNn-Fx-nGT" firstAttribute="leading" secondItem="H7I-xN-CAy" secondAttribute="leading" id="VEa-y1-n1n"/>
-                                    <constraint firstItem="jK8-II-Jjh" firstAttribute="leading" secondItem="H7I-xN-CAy" secondAttribute="leading" id="qRP-qB-oXn"/>
-                                    <constraint firstItem="jK8-II-Jjh" firstAttribute="top" secondItem="H7I-xN-CAy" secondAttribute="top" id="qWV-Bp-MIO"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -107,6 +76,24 @@
                                     <action selector="shareOnTwitterButtonPressed:" destination="aKx-sJ-VIs" eventType="touchUpInside" id="eDX-Ad-woD"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNn-Fx-nGT">
+                                <rect key="frame" x="0.0" y="288" width="130" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0126279194" green="0.42399219069999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="86" id="0Mw-yo-Plj"/>
+                                    <constraint firstAttribute="width" constant="130" id="RJt-2A-bTb"/>
+                                    <constraint firstAttribute="height" constant="30" id="g6S-bT-SVB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="0Mw-yo-Plj"/>
+                                    </mask>
+                                </variation>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -115,6 +102,7 @@
                             <constraint firstItem="A2v-6Z-AFh" firstAttribute="width" secondItem="uRM-US-sld" secondAttribute="width" constant="563" id="81I-Ze-HGC"/>
                             <constraint firstItem="H7I-xN-CAy" firstAttribute="leading" secondItem="QEY-FA-OSW" secondAttribute="leading" id="AmI-Ee-s0V"/>
                             <constraint firstAttribute="bottom" secondItem="A2v-6Z-AFh" secondAttribute="bottom" id="EQz-Fx-9O3"/>
+                            <constraint firstItem="RNn-Fx-nGT" firstAttribute="leading" secondItem="QEY-FA-OSW" secondAttribute="leading" id="EXT-13-Wjz"/>
                             <constraint firstItem="uRM-US-sld" firstAttribute="top" secondItem="4xD-91-ONz" secondAttribute="bottom" constant="8" symbolic="YES" id="IYW-da-adZ"/>
                             <constraint firstItem="uRM-US-sld" firstAttribute="centerX" secondItem="GBo-zP-2Fo" secondAttribute="centerX" id="S8s-GH-Eh1"/>
                             <constraint firstAttribute="trailingMargin" secondItem="GBo-zP-2Fo" secondAttribute="trailing" constant="-1" id="ck5-FN-o49"/>
@@ -124,6 +112,7 @@
                             <constraint firstItem="uRM-US-sld" firstAttribute="trailing" secondItem="QEY-FA-OSW" secondAttribute="trailingMargin" id="sVr-7k-H6E"/>
                             <constraint firstItem="A2v-6Z-AFh" firstAttribute="top" secondItem="QEY-FA-OSW" secondAttribute="top" id="ueP-WW-8Rf"/>
                             <constraint firstItem="A2v-6Z-AFh" firstAttribute="leading" secondItem="QEY-FA-OSW" secondAttribute="leading" id="v4q-cE-wkt"/>
+                            <constraint firstItem="H7I-xN-CAy" firstAttribute="top" secondItem="RNn-Fx-nGT" secondAttribute="bottom" id="wFq-Km-Iay"/>
                             <constraint firstAttribute="trailing" secondItem="A2v-6Z-AFh" secondAttribute="trailing" id="wMk-I8-uxQ"/>
                         </constraints>
                         <variation key="default">
@@ -390,7 +379,7 @@
             </objects>
             <point key="canvasLocation" x="452" y="390"/>
         </scene>
-        <!--Activities Table View Controller-->
+        <!--Quick Tour-->
         <scene sceneID="d3D-Pg-T8W">
             <objects>
                 <tableViewController id="Ig8-3m-7Qw" customClass="ActivitiesTableViewController" customModule="SanCarlosMex" customModuleProvider="target" sceneMemberID="viewController">
@@ -429,7 +418,7 @@
                             <outlet property="delegate" destination="Ig8-3m-7Qw" id="tLJ-5D-tPs"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="gNT-4P-dw1"/>
+                    <navigationItem key="navigationItem" title="Quick Tour" id="gNT-4P-dw1"/>
                     <connections>
                         <outlet property="mainMenuTableView" destination="lln-Wh-OvY" id="Ose-Uy-GXC"/>
                     </connections>
@@ -438,11 +427,11 @@
             </objects>
             <point key="canvasLocation" x="539" y="1128"/>
         </scene>
-        <!--Overview-->
+        <!--Quick Tour-->
         <scene sceneID="tAC-FD-d4J">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0sb-sc-kvk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Overview" id="TCY-wM-I8F"/>
+                    <tabBarItem key="tabBarItem" title="Quick Tour" id="TCY-wM-I8F"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="LP5-8J-GIo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
