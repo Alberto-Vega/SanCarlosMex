@@ -13,33 +13,24 @@ class POIDetailViewController: UIViewController {
     @IBOutlet weak var POIImageView: UIImageView!
     @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var headlineLabel: UILabel!
-    
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var featuresLabel: UILabel!
+    @IBOutlet weak var nameLocationLabel: UILabel!
+    @IBOutlet weak var addressLabel: UILabel!
     var selectedPOI: PointOfInterest?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         POIImageView.image = selectedPOI?.image
-        print(selectedPOI?.image)
         categoryLabel.text = selectedPOI?.name
         headlineLabel.text = selectedPOI?.description
-        
-        
+        descriptionLabel.text = selectedPOI?.notes
+        featuresLabel.text = selectedPOI?.features
+        nameLocationLabel.text = selectedPOI?.name
+        addressLabel.text = ("Business hours: \(selectedPOI!.hours) address: \(selectedPOI!.address)")
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

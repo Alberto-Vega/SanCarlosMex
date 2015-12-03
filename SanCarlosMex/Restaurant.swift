@@ -9,15 +9,15 @@
 import UIKit
 
 class Restaurant: PointOfInterest {
-  
-  var cuisine: String
-  var phone: String
-  
-  init(name: String, description: String, address: String, features: String, hours: String, notes: String, image: String, cuisine: String, phone: String) {
     
-    self.cuisine = cuisine
-    self.phone = phone
+    var cuisine: String
+    var phone: String
     
-    super.init(name: name, description: description, address: address, features: features, hours: hours, notes: notes, image: image)
-  }
+    init(name: String, description: String, address: String, features: String, hours: String, notes: String, image: String, cuisine: String, phone: String) {
+        
+        self.cuisine = cuisine
+        self.phone = phone
+        
+        super.init(name: name, description: description, address: address, features: features, hours: hours, notes: notes, image: image)
+    }
 }

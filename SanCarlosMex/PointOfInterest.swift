@@ -9,17 +9,18 @@
 import UIKit
 
 class PointOfInterest {
-  let name, description, address, features, hours, notes: String
-  var image = UIImage(contentsOfFile: "")
-
-  init(name: String, description: String, address: String, features: String, hours: String, notes: String, image: String) {
-    self.name = name
-    self.description = description
-    self.address = address
-    self.features = features
-    self.hours = hours
-    self.notes = notes
-    self.image = UIImage(contentsOfFile: image)
-  }
+    
+    let name, description, address, features, hours, notes: String
+    var image:UIImage?
+    
+    init(name: String, description: String, address: String, features: String, hours: String, notes: String, image: String) {
+        self.name = name
+        self.description = description
+        self.address = address
+        self.features = features
+        self.hours = hours
+        self.notes = notes
+        self.image = UIImage(named: image)
+    }
 }
 

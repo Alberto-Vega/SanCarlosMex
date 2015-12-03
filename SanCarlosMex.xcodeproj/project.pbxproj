@@ -120,7 +120,6 @@
 		BF8D97941C0ECCDC0024C71D /* PointsOfInterest */ = {
 			isa = PBXGroup;
 			children = (
-				BF494FA01B2D4DF00007115A /* HomeViewController.swift */,
 				BFBC18641B54BC4C001D6F02 /* CategoriesTableViewController.swift */,
 				BF77DC111BD4ADDF0084562E /* CategoryItemsTableViewController.swift */,
 				BF8D97911C0ECA860024C71D /* POIDetailViewController.swift */,
@@ -216,6 +215,7 @@
 		BFEAEE3B1B2BBC5900C4789D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BF494FA01B2D4DF00007115A /* HomeViewController.swift */,
 				BF8D97941C0ECCDC0024C71D /* PointsOfInterest */,
 				BF8D97931C0ECCCE0024C71D /* QuickTour */,
 			);

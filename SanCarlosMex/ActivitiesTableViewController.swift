@@ -15,22 +15,17 @@ class ActivitiesTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         createActivities()
-        print("The number of activities in the array is \(activities.count)")
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return activities.count
-        
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -86,19 +81,18 @@ class ActivitiesTableViewController: UITableViewController {
     //     MARK: - Navigation
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
         if segue.identifier == "DetailViewController" {
+            
             if let dvc = segue.destinationViewController as? DetailViewController {
                 
                 let indexPath = self.tableView.indexPathForSelectedRow
                 if let selectedRow = indexPath?.row {
+                    
                     let selectedActivity = self.activities[selectedRow]
-                    print("the selected library in table view: \(selectedActivity.name)")
                     dvc.selectedActivity = selectedActivity
                 }
             }
         }
-        //         Get the new view controller using segue.destinationViewController.
-        //         Pass the selected object to the new view controller.
-        
     }
 }

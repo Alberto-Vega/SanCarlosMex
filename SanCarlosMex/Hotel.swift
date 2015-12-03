@@ -9,16 +9,17 @@
 import UIKit
 
 class Hotel: PointOfInterest {
-  var stars: Int
-  var phone: String
-  var accomodations: String
-  var services: String
-  
-  init(name: String, description: String, address: String, features: String, hours: String, notes: String, image: String, stars: Int, phone: String, accomodations: String, services: String) {
-    self.stars = stars
-    self.phone = phone
-    self.accomodations = accomodations
-    self.services = services
-    super.init(name: name, description: description, address: address, features: address, hours: hours, notes: notes, image: image)
-  }
+    
+    var stars: Int
+    var phone: String
+    var accomodations: String
+    var services: String
+    
+    init(name: String, description: String, address: String, features: String, hours: String, notes: String, image: String, stars: Int, phone: String, accomodations: String, services: String) {
+        self.stars = stars
+        self.phone = phone
+        self.accomodations = accomodations
+        self.services = services
+        super.init(name: name, description: description, address: address, features: address, hours: hours, notes: notes, image: image)
+    }
 }

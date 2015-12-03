@@ -10,28 +10,31 @@ import UIKit
 import Social
 
 class DetailViewController: UIViewController {
-  
-  @IBOutlet weak var activityPhoto: UIImageView!
-  @IBOutlet weak var activityNameLabel: UILabel!
-  @IBOutlet weak var photoDescriptionLabel: UILabel!
-    var selectedActivity: Activity?
-    var praise: String?
     
+    @IBOutlet weak var activityPhoto: UIImageView!
+    @IBOutlet weak var activityNameLabel: UILabel!
+    @IBOutlet weak var photoDescriptionLabel: UILabel!
+    
+    var selectedActivity: Activity?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(praise)
-        print("The selected activity in DetailViewController: \(selectedActivity)")
+        setupLabelsAndButtons()
+        
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    func setupLabelsAndButtons() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Action, target: self, action: "shareTapped")
         self.activityNameLabel.text = self.selectedActivity?.name
         self.photoDescriptionLabel.text = self.selectedActivity?.createAndSelectARandomDescription()
         self.activityPhoto.image = self.selectedActivity?.image
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    //MARK: Social
     
     func shareTapped() {
         let vc = UIActivityViewController(activityItems: [activityPhoto.image!], applicationActivities: [])
@@ -53,23 +56,12 @@ class DetailViewController: UIViewController {
         vc.addURL(NSURL(string: "http://www.discoversancarlos.org/home"))
         presentViewController(vc, animated: true, completion: nil)
     }
-    /*
-    // MARK: - Navigation
     
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
+    @IBAction func shareOnFacebookButtonPressed(sender: UIButton) {
+        shareOnFacebookTapped()
     }
-    */
     
-
-  
-  @IBAction func shareOnFacebookButtonPressed(sender: UIButton) {
-    shareOnFacebookTapped()
-  }
-  
-  @IBAction func shareOnTwitterButtonPressed(sender: AnyObject) {
-    shareOnTwitterTapped()
-  }
+    @IBAction func shareOnTwitterButtonPressed(sender: AnyObject) {
+        shareOnTwitterTapped()
+    }
 }
