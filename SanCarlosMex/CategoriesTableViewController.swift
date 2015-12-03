@@ -100,6 +100,8 @@ class CategoriesTableViewController: UITableViewController {
         
         if(indexPath.row % 2 == 0) {
             cell.backgroundColor = UIColor.clearColor()
+        } else {
+            cell.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2);
         }
         
         let selectedActivity = self.categories[indexPath.row]
