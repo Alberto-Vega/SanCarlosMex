@@ -19,15 +19,24 @@ class CategoryItemsTableViewController: UITableViewController {
         super.viewDidLoad()
         print("The category passed is \(selectedCategory?.name)")
         if let selected = selectedCategory {
-            print("Number of restaurants: \(selectedCategory?.pointsOfInterest?.count)")
+            print("Number of restaurants: \(selectedCategory?.pointsOfInterest![0].name)")
+        setupTableViewBackGroundPhoto()
         }
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+
+    // MARK: - Table view
     
-    // MARK: - Table view data source
+    
+    func setupTableViewBackGroundPhoto() {
+        
+        itemTableView.backgroundView = UIImageView(image: UIImage(named: "boatRides.JPG"))
+        itemTableView.backgroundView!.contentMode = UIViewContentMode.ScaleAspectFill
+    }
+    
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         
@@ -43,6 +52,17 @@ class CategoryItemsTableViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("CategoryItem", forIndexPath: indexPath)
         let selectedPointOfInterest = self.selectedCategory?.pointsOfInterest![indexPath.row]
+        
+        
+        if(indexPath.row % 2 == 0) {
+            cell.backgroundColor = UIColor.clearColor()
+
+        } else {
+            cell.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2);
+        }
+        
+        cell.detailTextLabel?.backgroundColor = UIColor.clearColor()
+        cell.textLabel?.backgroundColor = UIColor.clearColor()
         
         let pointOfInterestNameLabel = cell.viewWithTag(2) as! UILabel
         pointOfInterestNameLabel.text = selectedPointOfInterest?.name

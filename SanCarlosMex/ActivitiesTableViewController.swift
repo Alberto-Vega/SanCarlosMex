@@ -15,27 +15,14 @@ class ActivitiesTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         createActivities()
+        setupTableViewBackGroundPhoto()
+        
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
-    }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return activities.count
-    }
-    
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("ActivityListItem", forIndexPath: indexPath)
-        let index = indexPath.row
-        let selectedActivity = self.activities[index]
-        let activityNameTextLabel = cell.viewWithTag(1) as! UILabel
-        activityNameTextLabel.text = selectedActivity.name
-        return cell
-    }
     
     func createActivities()-> [Activity] {
         
@@ -77,7 +64,38 @@ class ActivitiesTableViewController: UITableViewController {
         return activities
     }
     
+    // MARK: TableView
     
+    func setupTableViewBackGroundPhoto() {
+        
+        mainMenuTableView.backgroundView = UIImageView(image: UIImage(named: "tetakawi.jpeg"))
+        mainMenuTableView.backgroundView!.contentMode = UIViewContentMode.ScaleAspectFill
+    }
+
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return activities.count
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier("ActivityListItem", forIndexPath: indexPath)
+
+        if(indexPath.row % 2 == 0) {
+            cell.backgroundColor = UIColor.clearColor()
+        } else {
+            cell.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2);
+        }
+        
+        let selectedActivity = self.activities[indexPath.row]
+        let activityNameTextLabel = cell.viewWithTag(1) as! UILabel
+        activityNameTextLabel.text = selectedActivity.name
+        return cell
+    }
+   
     //     MARK: - Navigation
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

@@ -80,7 +80,7 @@ class CategoriesTableViewController: UITableViewController {
     
     func setupTableViewBackGroundPhoto() {
         
-        mainMenuTableView.backgroundView = UIImageView(image: UIImage(named: "tetakawi3.jpg"))
+        mainMenuTableView.backgroundView = UIImageView(image: UIImage(named: "tetakawiSquare.jpg"))
         mainMenuTableView.backgroundView!.contentMode = UIViewContentMode.ScaleAspectFill
     }
     
