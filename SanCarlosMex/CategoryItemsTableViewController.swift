@@ -33,7 +33,7 @@ class CategoryItemsTableViewController: UITableViewController {
     
     func setupTableViewBackGroundPhoto() {
         
-        itemTableView.backgroundView = UIImageView(image: UIImage(named: "boatRides.JPG"))
+        itemTableView.backgroundView = UIImageView(image: UIImage(named: "playaAlgodones.jpg"))
         itemTableView.backgroundView!.contentMode = UIViewContentMode.ScaleAspectFill
     }
     
@@ -67,7 +67,7 @@ class CategoryItemsTableViewController: UITableViewController {
         let pointOfInterestNameLabel = cell.viewWithTag(2) as! UILabel
         pointOfInterestNameLabel.text = selectedPointOfInterest?.name
         let pointOfInterestDescriptionLabel = cell.viewWithTag(1) as! UILabel
-        pointOfInterestDescriptionLabel.text = selectedPointOfInterest?.description
+        pointOfInterestDescriptionLabel.text = selectedPointOfInterest?.shortDescription
         
         return cell
     }

@@ -11,9 +11,9 @@ import UIKit
 class Beach: PointOfInterest {
     
     var experience: String
-    init(name: String, description: String, address: String, features: String, hours: String, notes: String, image: String, experience: String) {
+    init(name: String, shortDescription: String, address: String, features: String, hours: String, notes: String, image: String, experience: String) {
         
         self.experience = experience
-        super.init(name: name, description: description, address: address, features: features, hours: hours, notes: notes, image: image)
+        super.init(name: name, shortDescription: shortDescription, address: address, features: features, hours: hours, notes: notes, image: image)
     }
 }

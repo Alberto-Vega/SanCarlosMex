@@ -63,15 +63,15 @@ class CategoriesTableViewController: UITableViewController {
     }
     
     func createRestaurants() {
-        let bamboo = Restaurant(name: "Bamboo", description: "Asian Food", address: "Blvd Gabriel Estrada 137", features: "Bamboo also serves beer and wine and delivers anywhere in San Carlos", hours: "Wednesday trough Monday noon to 8pm", notes: "Located just across the street from Marina Terra", image: "dining.JPG", cuisine: "Bamboo serves a wide range of asia cuisine treats including Chinese and Japanese menu items", phone: "622 226 1225")
-        let piccolo = Restaurant(name: "Piccolo", description: "Italian Food", address: "Beltrones Avenue, San Carlos, Mexico", features: "Italian", hours: "Wed - Sat 6:30 pm - 11:00 pm", notes: "http://www.siestarealty.com/san_carlos_sonora_restaurants_bars_coffee.html", image: "dining.JPG", cuisine: "Italian", phone: "622-226-0503")
+        let bamboo = Restaurant(name: "Bamboo", shortDescription: "Asian Food", address: "Blvd Gabriel Estrada 137", features: "Located just across the street from Marina Terra", hours: "Wednesday trough Monday noon to 8pm", notes: "Bamboo also serves beer and wine and delivers anywhere in San Carlos", image: "bamboo.jpg", cuisine: "Bamboo serves a wide range of asia cuisine treats including Chinese and Japanese menu items", phone: "622 226 1225")
+        let piccolo = Restaurant(name: "Piccolo", shortDescription: "Italian Food", address: "Beltrones Avenue, San Carlos, Mexico", features: "Not only is the food really good, but the atmosphere is cozy and inviting.", hours: "Wed - Sat 6:30 pm - 11:00 pm", notes: "Great food and good service.", image: "piccolo.jpg", cuisine: "Italian", phone: "622-226-0503")
         restaurants += [bamboo, piccolo]
         print("The number of restaurants created: \(restaurants.count)")
     }
     
     func createBeaches() {
-        let piedrasPintas = Beach(name: "Piedras Pintas", description: "This is another great location for snorkeling, diving and kayaking. Snorkeling and diving are good up both sides of the cove.", address: "To get here by car, pass the RV park on your right, drive over the topes, and then turn left before starting up the hill towards the Mirador.  Drive down a dirt road to the first beach in a string of little coves and sandy beaches.", features: "kayaking.JPG", hours: "No hour restrictions", notes: "A second cove and beach are further to the left.There are no shade structures on this beach, so bring an umbrella. There are also no facilities. There is plenty of room to park.", image: "kayaking.JPG", experience: "This is another great location for snorkeling, diving and kayaking. Snorkeling and diving are good up both sides of the cove.")
-        let marinaTerraBeachClub = Beach(name: "Marinaterra Beach Club", description: "This is a great place to snorkel, dive, swim and kayak. It is a beautiful quiet area.", address: "Take the main road past the MarinaTerra Hotel, and then turn left at the roundabout and continue to follow the road towards the water", features: "This is a great place to snorkel, dive, swim and kayak. You can rent kayaks from the Beach Club (singles and doubles).", hours: "No hour restrictions", notes: "They do not rent snorkel equipment, so bring it with you if you want to snorkel. During jellyfish season, there tends to be a lot in this area, so take care.", image: "kayaking.JPG", experience: "http://www.whatsupsancarlos.com/beaches-san-carlos-mexico/")
+        let piedrasPintas = Beach(name: "Piedras Pintas", shortDescription: "Public Beach", address: "To get here by car, pass the RV park on your right, drive over the topes, and then turn left before starting up the hill towards the Mirador.  Drive down a dirt road to the first beach in a string of little coves and sandy beaches.", features: "This is another great location for snorkeling, diving and kayaking.", hours: "No hour restrictions", notes: "Snorkeling and diving are good up both sides of the cove.", image: "kayaking.JPG", experience: "This is another great location for snorkeling, diving and kayaking. Snorkeling and diving are good up both sides of the cove.")
+        let marinaTerraBeachClub = Beach(name: "Marinaterra", shortDescription: "Semi-Private Beach", address: "Take the main road past the MarinaTerra Hotel, and then turn left at the roundabout and continue to follow the road towards the water", features: "This is a great place to snorkel, dive, swim and kayak. It is a beautiful quiet area.", hours: "No hour restrictions", notes: "You can rent kayaks from the Beach Club (singles and doubles).They do not rent snorkel equipment, so bring it with you if you want to snorkel. During jellyfish season, there tends to be a lot in this area, so take care.", image: "kayaking.JPG", experience: "http://www.whatsupsancarlos.com/beaches-san-carlos-mexico/")
         
         beaches += [piedrasPintas, marinaTerraBeachClub]
     }
@@ -80,7 +80,7 @@ class CategoriesTableViewController: UITableViewController {
     
     func setupTableViewBackGroundPhoto() {
         
-        mainMenuTableView.backgroundView = UIImageView(image: UIImage(named: "tetakawiSquare.jpg"))
+        mainMenuTableView.backgroundView = UIImageView(image: UIImage(named: "piedrasPintas.jpg"))
         mainMenuTableView.backgroundView!.contentMode = UIViewContentMode.ScaleAspectFill
     }
     
@@ -99,9 +99,12 @@ class CategoriesTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("CategoryListItem", forIndexPath: indexPath)
         
         if(indexPath.row % 2 == 0) {
-            cell.backgroundColor = UIColor.clearColor()
+            
+            cell.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2)
         } else {
-            cell.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2);
+            
+            cell.backgroundColor = UIColor.clearColor()
+
         }
         
         let selectedActivity = self.categories[indexPath.row]

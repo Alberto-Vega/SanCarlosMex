@@ -27,8 +27,8 @@ class ActivitiesTableViewController: UITableViewController {
     func createActivities()-> [Activity] {
         
         var boatRides = Activity()
-        boatRides.name = "Boat Rides"
-        boatRides.image = UIImage(named: "boatRides.JPG")
+        boatRides.name = "Sailing"
+        boatRides.image = UIImage(named: "elPilar.JPG")
         activities.append(boatRides)
         
         var horsebackRiding = Activity()
@@ -43,7 +43,7 @@ class ActivitiesTableViewController: UITableViewController {
         
         var hiking = Activity()
         hiking.name = "Hiking"
-        hiking.image = UIImage(named: "hiking.JPG")
+        hiking.image = UIImage(named: "nacapule.jpg")
         activities.append(hiking)
         
         var dining = Activity()
@@ -53,13 +53,20 @@ class ActivitiesTableViewController: UITableViewController {
         
         var sightseeing = Activity()
         sightseeing.name = "Sightseeing"
-        sightseeing.image = UIImage(named: "sightseeing.JPG")
+        sightseeing.image = UIImage(named: "piedrasPintas.jpg")
         activities.append(sightseeing)
         
-        var bathing = Activity()
-        bathing.name = "Bathing"
-        bathing.image = UIImage(named: "bathing.JPG")
-        activities.append(bathing)
+        var swimming = Activity()
+        swimming.name = "Swimming"
+        swimming.image = UIImage(named: "puntaChencho.jpg")
+        activities.append(swimming)
+        
+        let natureWatching = Activity(name: "Nature Watching", image: UIImage(named: "delfines.jpg"))
+        activities.append(natureWatching)
+        
+        let birdWatching = Activity(name: "Bird Watching", image:UIImage(named:"palomaPitayera.jpg"))
+        activities.append(birdWatching)
+            
         
         return activities
     }
@@ -68,7 +75,7 @@ class ActivitiesTableViewController: UITableViewController {
     
     func setupTableViewBackGroundPhoto() {
         
-        mainMenuTableView.backgroundView = UIImageView(image: UIImage(named: "tetakawi.jpeg"))
+        mainMenuTableView.backgroundView = UIImageView(image: UIImage(named: "dessertAndOcean.jpeg"))
         mainMenuTableView.backgroundView!.contentMode = UIViewContentMode.ScaleAspectFill
     }
 

@@ -23,9 +23,9 @@ class POIDetailViewController: UIViewController {
         super.viewDidLoad()
         POIImageView.image = selectedPOI?.image
         categoryLabel.text = selectedPOI?.name
-        headlineLabel.text = selectedPOI?.description
-        descriptionLabel.text = selectedPOI?.notes
-        featuresLabel.text = selectedPOI?.features
+        headlineLabel.text = selectedPOI?.shortDescription
+        descriptionLabel.text = selectedPOI?.features
+        featuresLabel.text = selectedPOI?.notes
         nameLocationLabel.text = selectedPOI?.name
         addressLabel.text = ("Business hours: \(selectedPOI!.hours) address: \(selectedPOI!.address)")
     }

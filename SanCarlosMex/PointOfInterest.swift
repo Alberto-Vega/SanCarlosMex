@@ -10,12 +10,12 @@ import UIKit
 
 class PointOfInterest {
     
-    let name, description, address, features, hours, notes: String
+    let name, shortDescription, address, features, hours, notes: String
     var image:UIImage?
     
-    init(name: String, description: String, address: String, features: String, hours: String, notes: String, image: String) {
+    init(name: String, shortDescription: String, address: String, features: String, hours: String, notes: String, image: String) {
         self.name = name
-        self.description = description
+        self.shortDescription = shortDescription
         self.address = address
         self.features = features
         self.hours = hours
