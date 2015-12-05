@@ -21,23 +21,24 @@
 		BF494FA11B2D4DF00007115A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF494FA01B2D4DF00007115A /* HomeViewController.swift */; };
 		BF494FA31B2D4E800007115A /* tetakawi3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF494FA21B2D4E800007115A /* tetakawi3.jpg */; };
 		BF494FA51B2D510F0007115A /* tetakawi2.JPG in Resources */ = {isa = PBXBuildFile; fileRef = BF494FA41B2D510F0007115A /* tetakawi2.JPG */; };
-		BF4E4F501BD35D3C00347CA1 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4E4F4F1BD35D3C00347CA1 /* Category.swift */; settings = {ASSET_TAGS = (); }; };
+		BF4E4F501BD35D3C00347CA1 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4E4F4F1BD35D3C00347CA1 /* Category.swift */; };
 		BF5A3E431B2DDD7C005EB5B4 /* tetakawiSquare.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF5A3E421B2DDD7C005EB5B4 /* tetakawiSquare.jpg */; };
 		BF5A3E451B2DEBB0005EB5B4 /* tetakawiSquare1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF5A3E441B2DEBB0005EB5B4 /* tetakawiSquare1.jpg */; };
-		BF767D4E1BD1E85F0071B173 /* Hotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF767D4C1BD1E85F0071B173 /* Hotel.swift */; settings = {ASSET_TAGS = (); }; };
-		BF767D4F1BD1E85F0071B173 /* Adventure.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF767D4D1BD1E85F0071B173 /* Adventure.swift */; settings = {ASSET_TAGS = (); }; };
-		BF77DC121BD4ADDF0084562E /* CategoryItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF77DC111BD4ADDF0084562E /* CategoryItemsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		BF767D4E1BD1E85F0071B173 /* Hotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF767D4C1BD1E85F0071B173 /* Hotel.swift */; };
+		BF767D4F1BD1E85F0071B173 /* Adventure.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF767D4D1BD1E85F0071B173 /* Adventure.swift */; };
+		BF77DC121BD4ADDF0084562E /* CategoryItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF77DC111BD4ADDF0084562E /* CategoryItemsTableViewController.swift */; };
+		BF8D97921C0ECA860024C71D /* POIDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8D97911C0ECA860024C71D /* POIDetailViewController.swift */; };
 		BFBC18651B54BC4C001D6F02 /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBC18641B54BC4C001D6F02 /* CategoriesTableViewController.swift */; };
 		BFBC18671B556ED2001D6F02 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBC18661B556ED2001D6F02 /* Restaurant.swift */; };
 		BFEAEE181B2B912F00C4789D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEAEE171B2B912F00C4789D /* AppDelegate.swift */; };
-		BFEAEE1A1B2B912F00C4789D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEAEE191B2B912F00C4789D /* ViewController.swift */; };
+		BFEAEE1A1B2B912F00C4789D /* ActivitiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEAEE191B2B912F00C4789D /* ActivitiesTableViewController.swift */; };
 		BFEAEE1F1B2B912F00C4789D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFEAEE1E1B2B912F00C4789D /* Images.xcassets */; };
 		BFEAEE221B2B912F00C4789D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFEAEE201B2B912F00C4789D /* LaunchScreen.xib */; };
 		BFEAEE2E1B2B912F00C4789D /* SanCarlosMexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEAEE2D1B2B912F00C4789D /* SanCarlosMexTests.swift */; };
 		BFEAEE381B2BBBF800C4789D /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEAEE371B2BBBF800C4789D /* Activity.swift */; };
 		BFEAEE411B2BCB4F00C4789D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFEAEE401B2BCB4F00C4789D /* Main.storyboard */; };
-		BFF74F851BD08FF60028C638 /* PointOfInterest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF74F841BD08FF60028C638 /* PointOfInterest.swift */; settings = {ASSET_TAGS = (); }; };
-		BFF74F871BD0B91C0028C638 /* Beaches.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF74F861BD0B91C0028C638 /* Beaches.swift */; settings = {ASSET_TAGS = (); }; };
+		BFF74F851BD08FF60028C638 /* PointOfInterest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF74F841BD08FF60028C638 /* PointOfInterest.swift */; };
+		BFF74F871BD0B91C0028C638 /* Beaches.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF74F861BD0B91C0028C638 /* Beaches.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,12 +72,13 @@
 		BF767D4C1BD1E85F0071B173 /* Hotel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hotel.swift; sourceTree = "<group>"; };
 		BF767D4D1BD1E85F0071B173 /* Adventure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Adventure.swift; sourceTree = "<group>"; };
 		BF77DC111BD4ADDF0084562E /* CategoryItemsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryItemsTableViewController.swift; sourceTree = "<group>"; };
+		BF8D97911C0ECA860024C71D /* POIDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POIDetailViewController.swift; sourceTree = "<group>"; };
 		BFBC18641B54BC4C001D6F02 /* CategoriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewController.swift; sourceTree = "<group>"; };
 		BFBC18661B556ED2001D6F02 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		BFEAEE121B2B912F00C4789D /* SanCarlosMex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SanCarlosMex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFEAEE161B2B912F00C4789D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFEAEE171B2B912F00C4789D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BFEAEE191B2B912F00C4789D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BFEAEE191B2B912F00C4789D /* ActivitiesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesTableViewController.swift; sourceTree = "<group>"; };
 		BFEAEE1E1B2B912F00C4789D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BFEAEE211B2B912F00C4789D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		BFEAEE271B2B912F00C4789D /* SanCarlosMexTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SanCarlosMexTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +108,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF8D97931C0ECCCE0024C71D /* QuickTour */ = {
+			isa = PBXGroup;
+			children = (
+				BFEAEE191B2B912F00C4789D /* ActivitiesTableViewController.swift */,
+				BF3FF7621B2BF4D40024D8A9 /* DetailViewController.swift */,
+			);
+			name = QuickTour;
+			sourceTree = "<group>";
+		};
+		BF8D97941C0ECCDC0024C71D /* PointsOfInterest */ = {
+			isa = PBXGroup;
+			children = (
+				BFBC18641B54BC4C001D6F02 /* CategoriesTableViewController.swift */,
+				BF77DC111BD4ADDF0084562E /* CategoryItemsTableViewController.swift */,
+				BF8D97911C0ECA860024C71D /* POIDetailViewController.swift */,
+			);
+			name = PointsOfInterest;
+			sourceTree = "<group>";
+		};
 		BFEAEE091B2B912F00C4789D = {
 			isa = PBXGroup;
 			children = (
@@ -129,7 +150,7 @@
 			children = (
 				BFEAEE171B2B912F00C4789D /* AppDelegate.swift */,
 				BFEAEE3B1B2BBC5900C4789D /* Controllers */,
-				BFEAEE3A1B2BBC4700C4789D /* Models */,
+				BFEAEE3A1B2BBC4700C4789D /* Model */,
 				BFEAEE3D1B2BBCAF00C4789D /* Views */,
 				BFEAEE1E1B2B912F00C4789D /* Images.xcassets */,
 				BFEAEE201B2B912F00C4789D /* LaunchScreen.xib */,
@@ -177,7 +198,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		BFEAEE3A1B2BBC4700C4789D /* Models */ = {
+		BFEAEE3A1B2BBC4700C4789D /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				BFEAEE371B2BBBF800C4789D /* Activity.swift */,
@@ -188,17 +209,15 @@
 				BF767D4C1BD1E85F0071B173 /* Hotel.swift */,
 				BF767D4D1BD1E85F0071B173 /* Adventure.swift */,
 			);
-			name = Models;
+			name = Model;
 			sourceTree = "<group>";
 		};
 		BFEAEE3B1B2BBC5900C4789D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				BF494FA01B2D4DF00007115A /* HomeViewController.swift */,
-				BFBC18641B54BC4C001D6F02 /* CategoriesTableViewController.swift */,
-				BF77DC111BD4ADDF0084562E /* CategoryItemsTableViewController.swift */,
-				BFEAEE191B2B912F00C4789D /* ViewController.swift */,
-				BF3FF7621B2BF4D40024D8A9 /* DetailViewController.swift */,
+				BF8D97931C0ECCCE0024C71D /* QuickTour */,
+				BF8D97941C0ECCDC0024C71D /* PointsOfInterest */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -335,10 +354,11 @@
 				BF77DC121BD4ADDF0084562E /* CategoryItemsTableViewController.swift in Sources */,
 				BFBC18671B556ED2001D6F02 /* Restaurant.swift in Sources */,
 				BFF74F871BD0B91C0028C638 /* Beaches.swift in Sources */,
-				BFEAEE1A1B2B912F00C4789D /* ViewController.swift in Sources */,
+				BFEAEE1A1B2B912F00C4789D /* ActivitiesTableViewController.swift in Sources */,
 				BFEAEE181B2B912F00C4789D /* AppDelegate.swift in Sources */,
 				BF3FF7631B2BF4D40024D8A9 /* DetailViewController.swift in Sources */,
 				BFF74F851BD08FF60028C638 /* PointOfInterest.swift in Sources */,
+				BF8D97921C0ECA860024C71D /* POIDetailViewController.swift in Sources */,
 				BF4E4F501BD35D3C00347CA1 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,6 +480,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SanCarlosMex/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -471,6 +492,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SanCarlosMex/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";

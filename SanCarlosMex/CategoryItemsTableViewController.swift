@@ -9,101 +9,79 @@
 import UIKit
 
 class CategoryItemsTableViewController: UITableViewController {
-  
-  var selectedCategory: Category?
-  var praise: String?
-
-
+    @IBOutlet var itemTableView: UITableView!
+    
+    var selectedCategory: Category?
+    var testData: String?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-      print("The category passed is \(selectedCategory?.name)")
-      if let selected = selectedCategory {
-      print("Number of restaurants: \(selected.pointsOfInterest.count)")
-      }
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        print("The category passed is \(selectedCategory?.name)")
+        if let selected = selectedCategory {
+            print("Number of restaurants: \(selectedCategory?.pointsOfInterest![0].name)")
+        setupTableViewBackGroundPhoto()
+        }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-  
-  
 
-    // MARK: - Table view data source
-
+    // MARK: - Table view
+    
+    
+    func setupTableViewBackGroundPhoto() {
+        
+        itemTableView.backgroundView = UIImageView(image: UIImage(named: "playaAlgodones.jpg"))
+        itemTableView.backgroundView!.contentMode = UIViewContentMode.ScaleAspectFill
+    }
+    
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
+        
         return 1
     }
-
+    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-//        return ((selectedCategory?.pointsOfInterest.count)! + 10)
-      return 10
+        
+        return selectedCategory!.pointsOfInterest!.count
     }
-
-  
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCellWithIdentifier("CategoryItem", forIndexPath: indexPath)
-      let index = indexPath.row
-      let selectedPointOfInterest = self.selectedCategory?.pointsOfInterest[index]
-      let pointOfInterestNameTextLabel = cell.viewWithTag(2) as! UILabel
-       pointOfInterestNameTextLabel.text = selectedPointOfInterest?.name
+        let selectedPointOfInterest = self.selectedCategory?.pointsOfInterest![indexPath.row]
+        
+        
+        if(indexPath.row % 2 == 0) {
+            cell.backgroundColor = UIColor.clearColor()
+
+        } else {
+            cell.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2);
+        }
+        
+        cell.detailTextLabel?.backgroundColor = UIColor.clearColor()
+        cell.textLabel?.backgroundColor = UIColor.clearColor()
+        
+        let pointOfInterestNameLabel = cell.viewWithTag(2) as! UILabel
+        pointOfInterestNameLabel.text = selectedPointOfInterest?.name
+        let pointOfInterestDescriptionLabel = cell.viewWithTag(1) as! UILabel
+        pointOfInterestDescriptionLabel.text = selectedPointOfInterest?.shortDescription
+        
         return cell
     }
     
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-  
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-      if segue.identifier == "ShowDetailViewController" {
-//      segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-      }
+        if segue.identifier == "POIDetailViewController" {
+            let POIDetailVC = segue.destinationViewController as? POIDetailViewController
+            let indexPath = self.itemTableView.indexPathForSelectedRow
+            if let selectedRow = indexPath?.row {
+                let selectedPOI = self.selectedCategory?.pointsOfInterest![selectedRow]
+                POIDetailVC?.selectedPOI = selectedPOI
+            }
+        }
     }
-
-
 }

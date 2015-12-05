@@ -9,16 +9,15 @@
 import UIKit
 
 class Category {
-  var name: String
-  var image = UIImage(contentsOfFile: "")
-  var pointsOfInterest = [PointOfInterest]()
-  
-  init(name: String, image: String, pointsofInterest: [PointOfInterest]) {
-    self.name = name
     
-    self.image = UIImage(contentsOfFile: image)
-    self.pointsOfInterest += pointsOfInterest
-
-  }
-  
+    var name: String
+    var image = UIImage(contentsOfFile: "")
+    var pointsOfInterest:[PointOfInterest]?
+    
+    init(name: String, image: String, pointsOfInterest: [PointOfInterest]) {
+        self.name = name
+        self.image = UIImage(contentsOfFile: image)
+        self.pointsOfInterest = pointsOfInterest
+        
+    }
 }
