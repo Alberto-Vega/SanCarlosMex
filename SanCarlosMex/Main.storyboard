@@ -353,7 +353,7 @@
         <scene sceneID="icp-am-PQZ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="96o-Fs-8lc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Points of Interest" id="6aI-19-NIU"/>
+                    <tabBarItem key="tabBarItem" title="Points of Interest" image="POI" id="6aI-19-NIU"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ra9-DG-wzS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -441,7 +441,7 @@
         <scene sceneID="tAC-FD-d4J">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0sb-sc-kvk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Quick Tour" id="TCY-wM-I8F"/>
+                    <tabBarItem key="tabBarItem" title="Quick Tour" image="explore" id="TCY-wM-I8F"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="LP5-8J-GIo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -676,6 +676,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="POI" width="31" height="32"/>
+        <image name="explore" width="17" height="32"/>
         <image name="facebook-flat-vector-logo.png" width="400" height="400"/>
         <image name="new-twitter-logo-vector.png" width="400" height="400"/>
         <image name="tetakawi3.jpg" width="1600" height="1200"/>
