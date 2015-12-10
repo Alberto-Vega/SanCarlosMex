@@ -30,13 +30,13 @@
                                         <rect key="frame" x="279" y="106" width="42" height="21"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                     </label>
                                 </subviews>
                                 <animations/>
-                                <color key="backgroundColor" white="0.90971936673157905" alpha="0.41000000000000003" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="centerX" secondItem="s26-nP-6cZ" secondAttribute="centerX" id="2zh-Y9-MS3"/>
                                     <constraint firstAttribute="centerY" secondItem="s26-nP-6cZ" secondAttribute="centerY" id="4vI-J1-MMJ"/>
@@ -125,6 +125,7 @@
                     <tabBarItem key="tabBarItem" title="Overview" id="5dR-of-1oH"/>
                     <navigationItem key="navigationItem" id="elF-nj-Wcl"/>
                     <connections>
+                        <outlet property="ContainerView" destination="H7I-xN-CAy" id="tzz-fW-Wf9"/>
                         <outlet property="activityNameLabel" destination="RNn-Fx-nGT" id="J2c-W2-ZFN"/>
                         <outlet property="activityPhoto" destination="A2v-6Z-AFh" id="tbf-zU-dKk"/>
                         <outlet property="photoDescriptionLabel" destination="s26-nP-6cZ" id="YQs-vj-cF5"/>
@@ -353,7 +354,7 @@
         <scene sceneID="icp-am-PQZ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="96o-Fs-8lc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Points of Interest" id="6aI-19-NIU"/>
+                    <tabBarItem key="tabBarItem" title="Points of Interest" image="POI" id="6aI-19-NIU"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ra9-DG-wzS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -441,7 +442,7 @@
         <scene sceneID="tAC-FD-d4J">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0sb-sc-kvk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Quick Tour" id="TCY-wM-I8F"/>
+                    <tabBarItem key="tabBarItem" title="Quick Tour" image="explore" id="TCY-wM-I8F"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="LP5-8J-GIo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -664,6 +665,7 @@
                         <outlet property="POIImageView" destination="CjM-wC-BBT" id="AsD-jC-G90"/>
                         <outlet property="addressLabel" destination="4gM-ce-xH4" id="ioh-am-4La"/>
                         <outlet property="categoryLabel" destination="XfA-MP-hfp" id="xBX-1V-EzD"/>
+                        <outlet property="containerView" destination="i1b-ck-zZ8" id="HXd-5p-XML"/>
                         <outlet property="descriptionLabel" destination="ehx-rf-zfy" id="175-xz-ZGJ"/>
                         <outlet property="featuresLabel" destination="uQ1-V6-wPm" id="aMt-q1-DTk"/>
                         <outlet property="headlineLabel" destination="BKv-Di-ZVn" id="vRa-yv-ghz"/>
@@ -676,6 +678,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="POI" width="31" height="32"/>
+        <image name="explore" width="17" height="32"/>
         <image name="facebook-flat-vector-logo.png" width="400" height="400"/>
         <image name="new-twitter-logo-vector.png" width="400" height="400"/>
         <image name="tetakawi3.jpg" width="1600" height="1200"/>

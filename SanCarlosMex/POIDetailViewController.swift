@@ -18,6 +18,7 @@ class POIDetailViewController: UIViewController {
     @IBOutlet weak var nameLocationLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
     var selectedPOI: PointOfInterest?
+    @IBOutlet weak var containerView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +29,7 @@ class POIDetailViewController: UIViewController {
         featuresLabel.text = selectedPOI?.notes
         nameLocationLabel.text = selectedPOI?.name
         addressLabel.text = ("Business hours: \(selectedPOI!.hours) address: \(selectedPOI!.address)")
+        self.containerView.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.4);
     }
 
     override func didReceiveMemoryWarning() {
