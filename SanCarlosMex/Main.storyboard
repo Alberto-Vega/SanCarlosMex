@@ -30,13 +30,13 @@
                                         <rect key="frame" x="279" y="106" width="42" height="21"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                     </label>
                                 </subviews>
                                 <animations/>
-                                <color key="backgroundColor" white="0.90971936673157905" alpha="0.41000000000000003" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="centerX" secondItem="s26-nP-6cZ" secondAttribute="centerX" id="2zh-Y9-MS3"/>
                                     <constraint firstAttribute="centerY" secondItem="s26-nP-6cZ" secondAttribute="centerY" id="4vI-J1-MMJ"/>
@@ -125,6 +125,7 @@
                     <tabBarItem key="tabBarItem" title="Overview" id="5dR-of-1oH"/>
                     <navigationItem key="navigationItem" id="elF-nj-Wcl"/>
                     <connections>
+                        <outlet property="ContainerView" destination="H7I-xN-CAy" id="tzz-fW-Wf9"/>
                         <outlet property="activityNameLabel" destination="RNn-Fx-nGT" id="J2c-W2-ZFN"/>
                         <outlet property="activityPhoto" destination="A2v-6Z-AFh" id="tbf-zU-dKk"/>
                         <outlet property="photoDescriptionLabel" destination="s26-nP-6cZ" id="YQs-vj-cF5"/>
@@ -664,6 +665,7 @@
                         <outlet property="POIImageView" destination="CjM-wC-BBT" id="AsD-jC-G90"/>
                         <outlet property="addressLabel" destination="4gM-ce-xH4" id="ioh-am-4La"/>
                         <outlet property="categoryLabel" destination="XfA-MP-hfp" id="xBX-1V-EzD"/>
+                        <outlet property="containerView" destination="i1b-ck-zZ8" id="HXd-5p-XML"/>
                         <outlet property="descriptionLabel" destination="ehx-rf-zfy" id="175-xz-ZGJ"/>
                         <outlet property="featuresLabel" destination="uQ1-V6-wPm" id="aMt-q1-DTk"/>
                         <outlet property="headlineLabel" destination="BKv-Di-ZVn" id="vRa-yv-ghz"/>
