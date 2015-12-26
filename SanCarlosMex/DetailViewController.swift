@@ -33,7 +33,7 @@ class DetailViewController: UIViewController {
         self.activityNameLabel.text = self.selectedActivity?.name
         self.photoDescriptionLabel.text = self.selectedActivity?.createAndSelectARandomDescription()
         self.activityPhoto.image = self.selectedActivity?.image
-        self.ContainerView.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3);
+        self.ContainerView.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25);
     }
     
     //MARK: Social

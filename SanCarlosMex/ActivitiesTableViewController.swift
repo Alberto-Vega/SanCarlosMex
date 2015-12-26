@@ -64,7 +64,7 @@ class ActivitiesTableViewController: UITableViewController {
         let natureWatching = Activity(name: "Nature Watching", image: UIImage(named: "delfines.jpg"))
         activities.append(natureWatching)
         
-        let birdWatching = Activity(name: "Bird Watching", image:UIImage(named:"palomaPitayera.jpg"))
+        let birdWatching = Activity(name: "Bird Watching", image:UIImage(named:"cactusWren.jpg"))
         activities.append(birdWatching)
             
         
