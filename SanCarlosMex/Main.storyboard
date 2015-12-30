@@ -313,7 +313,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qbf-HV-S9g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-258" y="390"/>
+            <point key="canvasLocation" x="-702" y="380"/>
         </scene>
         <!--Points of Interest-->
         <scene sceneID="sJb-tZ-RVA">
@@ -344,7 +344,7 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.95340768909999996" alpha="0.82999999999999996" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <segue destination="koW-LZ-XDO" kind="show" identifier="ShowCategoryItemTableVC" id="sqI-hl-B5q"/>
+                                    <segue destination="koW-LZ-XDO" kind="show" identifier="ShowCategoryItems" id="sqI-hl-B5q"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -684,7 +684,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vj7-LZ-RZT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2721" y="390"/>
+            <point key="canvasLocation" x="2635" y="390"/>
         </scene>
     </scenes>
     <resources>
