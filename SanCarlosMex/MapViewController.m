@@ -13,6 +13,8 @@
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 
+@property
+
 @end
 
 @implementation MapViewController

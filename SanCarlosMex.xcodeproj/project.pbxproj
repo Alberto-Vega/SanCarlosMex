@@ -126,9 +126,9 @@
 			children = (
 				BFBC18641B54BC4C001D6F02 /* CategoriesTableViewController.swift */,
 				BF77DC111BD4ADDF0084562E /* CategoryItemsTableViewController.swift */,
+				BF8D97911C0ECA860024C71D /* POIDetailViewController.swift */,
 				BF85AE6D1C338B4B004292E6 /* MapViewController.h */,
 				BF85AE6E1C338B4B004292E6 /* MapViewController.m */,
-				BF8D97911C0ECA860024C71D /* POIDetailViewController.swift */,
 			);
 			name = PointsOfInterest;
 			sourceTree = "<group>";

@@ -118,21 +118,21 @@ class CategoriesTableViewController: UITableViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "ShowCategoryItems" {
-//            if let CategoryItemsTableViewController = segue.destinationViewController as? CategoryItemsTableViewController {
-//                
-//                let indexPath = self.tableView.indexPathForSelectedRow
-//                if let selectedRow = indexPath?.row {
-//                    let selectedCategory = self.categories[selectedRow]
-//                    CategoryItemsTableViewController.selectedCategory = selectedCategory
+            if let CategoryItemsTableViewController = segue.destinationViewController as? CategoryItemsTableViewController {
+                
+                let indexPath = self.tableView.indexPathForSelectedRow
+                if let selectedRow = indexPath?.row {
+                    let selectedCategory = self.categories[selectedRow]
+                    CategoryItemsTableViewController.selectedCategory = selectedCategory
             
-            if let tabBarController = segue.destinationViewController as? UITabBarController {
-                if let categoryItemsTableViewController = tabBarController.viewControllers![0] as? CategoryItemsTableViewController {
-                    if let indexPath = self.tableView.indexPathForSelectedRow {
-                    let selectedCategory =  self.categories[indexPath.row]
-                    
-                    categoryItemsTableViewController.selectedCategory = selectedCategory
-                    }
-                    
+//            if let tabBarController = segue.destinationViewController as? UITabBarController {
+//                if let categoryItemsTableViewController = tabBarController.viewControllers![0] as? CategoryItemsTableViewController {
+//                    if let indexPath = self.tableView.indexPathForSelectedRow {
+//                    let selectedCategory =  self.categories[indexPath.row]
+//                    
+//                    categoryItemsTableViewController.selectedCategory = selectedCategory
+//                    }
+//                    
                 }
             }
         }
