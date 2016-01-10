@@ -16,13 +16,13 @@ class Adventure: PointOfInterest {
     var preparations: String
     var requirements: String
     
-    init(name: String, shortDescription: String, address: String, features: String, hours: String, notes: String, image: String, coordinate: CLLocationCoordinate2D, experience: String, details: String, preparations: String, requirements: String) {
+    init(name: String, shortDescription: String, address: String, features: String, hours: String, notes: String, image: String, latitude: Double, longitude: Double, experience: String, details: String, preparations: String, requirements: String) {
         
         self.experience = experience
         self.details = details
         self.preparations = preparations
         self.requirements = requirements
         
-        super.init(name: name, shortDescription: shortDescription, address: address, features: features, hours: hours, notes: notes, image: image, coordinate: coordinate)
+        super.init(name: name, shortDescription: shortDescription, address: address, features: features, hours: hours, notes: notes, image: image, latitude: latitude, longitude: longitude)
     }
 }

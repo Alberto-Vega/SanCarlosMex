@@ -13,9 +13,10 @@ import MapKit
 class Beach: PointOfInterest {
     
     var experience: String
-    init(name: String, shortDescription: String, address: String, features: String, hours: String, notes: String, image: String, coordinate: CLLocationCoordinate2D, experience: String) {
-        
+    
+    init(name: String, shortDescription: String, address: String, features: String, hours: String, notes: String, image: String, latitude: Double, longitude: Double, experience: String) {
+
         self.experience = experience
-        super.init(name: name, shortDescription: shortDescription, address: address, features: features, hours: hours, notes: notes, image: image, coordinate: coordinate)
+        super.init(name: name, shortDescription: shortDescription, address: address, features: features, hours: hours, notes: notes, image: image, latitude: latitude, longitude: longitude)
     }
 }

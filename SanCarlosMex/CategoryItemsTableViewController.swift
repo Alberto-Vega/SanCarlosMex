@@ -12,14 +12,13 @@ class CategoryItemsTableViewController: UITableViewController {
     @IBOutlet var itemTableView: UITableView!
     
     var selectedCategory: Category?
-    var testData: String?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         print("The category passed is \(selectedCategory?.name)")
         if let selected = selectedCategory {
-            print("Number of restaurants: \(selectedCategory?.pointsOfInterest![0].name)")
+            print("Number of restaurants: \(selectedCategory?.pointsOfInterest?[0].name)")
         setupTableViewBackGroundPhoto()
         }
     }
