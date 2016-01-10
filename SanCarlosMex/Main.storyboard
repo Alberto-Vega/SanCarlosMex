@@ -188,18 +188,18 @@
                         <viewControllerLayoutGuide type="bottom" id="Txr-CX-Jc9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8i1-Wp-Qjy">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="850"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="mGR-Q9-0HO">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="mGR-Q9-0HO">
+                                <rect key="frame" x="0.0" y="108" width="600" height="644"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Txr-CX-Jc9" firstAttribute="top" secondItem="mGR-Q9-0HO" secondAttribute="bottom" id="C2S-6a-NVv"/>
+                            <constraint firstItem="Txr-CX-Jc9" firstAttribute="top" secondItem="mGR-Q9-0HO" secondAttribute="bottom" constant="49" id="C2S-6a-NVv"/>
                             <constraint firstItem="mGR-Q9-0HO" firstAttribute="leading" secondItem="8i1-Wp-Qjy" secondAttribute="leading" id="Gqb-c3-5fx"/>
-                            <constraint firstItem="mGR-Q9-0HO" firstAttribute="top" secondItem="zJ3-pe-1b0" secondAttribute="bottom" id="QyU-TY-LAe"/>
+                            <constraint firstItem="mGR-Q9-0HO" firstAttribute="top" secondItem="zJ3-pe-1b0" secondAttribute="bottom" constant="44" id="QyU-TY-LAe"/>
                             <constraint firstAttribute="trailing" secondItem="mGR-Q9-0HO" secondAttribute="trailing" id="uUi-lv-p2n"/>
                         </constraints>
                     </view>
@@ -373,8 +373,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="QIv-aD-GsZ" kind="relationship" relationship="viewControllers" id="Aby-MF-zxD"/>
                         <segue destination="0sb-sc-kvk" kind="relationship" relationship="viewControllers" id="qHl-WD-u1t"/>
+                        <segue destination="QIv-aD-GsZ" kind="relationship" relationship="viewControllers" id="Aby-MF-zxD"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4nN-VS-7MB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -557,7 +557,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="ULF-Ds-uaQ" kind="presentation" id="OQ7-qy-rpv"/>
+                                                    <segue destination="ULF-Ds-uaQ" kind="show" id="OQ7-qy-rpv"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -658,7 +658,7 @@
         <scene sceneID="QWj-Cr-Ust">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QIv-aD-GsZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="POI" selectedImage="POI" id="XTH-d6-VbG"/>
+                    <tabBarItem key="tabBarItem" title="POI" image="POI" selectedImage="POI" id="XTH-d6-VbG"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qtg-ay-bFB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
