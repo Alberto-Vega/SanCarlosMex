@@ -7,17 +7,18 @@
 //
 
 import UIKit
+import MapKit
 
 class Restaurant: PointOfInterest {
     
     var cuisine: String
     var phone: String
     
-    init(name: String, shortDescription: String, address: String, features: String, hours: String, notes: String, image: String, cuisine: String, phone: String) {
+    init(name: String, shortDescription: String, address: String, features: String, hours: String, notes: String, image: String, coordinate: CLLocationCoordinate2D, cuisine: String, phone: String) {
         
         self.cuisine = cuisine
         self.phone = phone
         
-        super.init(name: name, shortDescription: shortDescription, address: address, features: features, hours: hours, notes: notes, image: image)
+        super.init(name: name, shortDescription: shortDescription, address: address, features: features, hours: hours, notes: notes, image: image, coordinate: coordinate)
     }
 }
