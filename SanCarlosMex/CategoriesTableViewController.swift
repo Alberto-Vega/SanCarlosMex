@@ -28,18 +28,18 @@ class CategoriesTableViewController: UITableViewController {
         
         createRestaurants()
         createBeaches()
-        createCategories()
+//        createCategories()
 
 //        print("In view did load we have cuisine: \(restaurants[0].cuisine) name \(restaurants[0].name)")
-        print("ViewdidLoad categories: \(categories.count)")
-        print("In view did load we have cuisine: \(categories[0].pointsOfInterest!.count)")
+//        print("ViewdidLoad categories: \(categories.count)")
+//        print("In view did load we have cuisine: \(categories[0].pointsOfInterest!.count)")
 //        name \(categories[0].pointsOfInterest![0].name)")
 
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        print("In view didApper we have pointsofInterest: \(categories[0].pointsOfInterest!.count)")
+//        print("In view didApper we have pointsofInterest: \(categories[0].pointsOfInterest!.count)")
     }
     
     override func didReceiveMemoryWarning() {
@@ -60,7 +60,7 @@ class CategoriesTableViewController: UITableViewController {
         let fitnessCategory = Category(name: "Fitness", image: "kayaking.JPG", pointsOfInterest: restaurants)
         let trailsCategory = Category(name: "Trails", image: "kayaking.JPG", pointsOfInterest: restaurants)
         categories += [restaurantCategory, beachesCategory, hotelCategory, barCategory, adventuresCategory, fitnessCategory, trailsCategory]
-        
+        self.mainMenuTableView.reloadData()
         return categories
     }
     
@@ -73,6 +73,7 @@ class CategoriesTableViewController: UITableViewController {
                     if let venues = venues {
                         NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
                             self.restaurants = venues
+                            self.createCategories()
                         })
                     }
                 })
@@ -137,9 +138,9 @@ class CategoriesTableViewController: UITableViewController {
                 let indexPath = self.tableView.indexPathForSelectedRow
                 if let selectedRow = indexPath?.row {
                     let selectedCategory = self.categories[selectedRow]
-                    CategoryItemsTableViewController.selectedCategory = selectedCategory
+                    CategoryItemsTableViewController.selectedCategory? = selectedCategory
                     
-                    CategoryItemsTableViewController.selectedCategory?.pointsOfInterest = self.restaurants
+//                    CategoryItemsTableViewController.selectedCategory?.pointsOfInterest = self.restaurants
 
             
 //            if let tabBarController = segue.destinationViewController as? UITabBarController {

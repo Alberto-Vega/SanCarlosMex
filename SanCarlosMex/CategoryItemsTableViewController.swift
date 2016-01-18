@@ -43,7 +43,7 @@ class CategoryItemsTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
+        print(selectedCategory)
         return selectedCategory!.pointsOfInterest!.count
     }
     

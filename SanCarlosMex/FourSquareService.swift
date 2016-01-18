@@ -15,7 +15,7 @@ let foursquareVenueSearchURL = "https://api.foursquare.com/v2/venues/search"
 
 let foursquareImageRequestURL = "https://api.foursquare.com/v2/venues/"
 
-let cfLatLong = "47.625114,-122.335874"
+let cfLatLong = "29.0829993,-110.9417548"
 
 let apiVersion = "20130815"
 
@@ -93,6 +93,7 @@ class FourSquareService {
     }
     
     class func searchVenues(queryString: String, completion: (success: Bool, data: NSData?)->()) {
+        
         let urlString = "\(foursquareVenueSearchURL)?client_id=\(foursquareAPIClientID)&client_secret=\(foursquareAPIClientSecret)&ll=\(cfLatLong)&v=\(apiVersion)&query=\(queryString)"
         guard let url = NSURL(string: urlString) else { return }
         let request = NSMutableURLRequest(URL: url)
