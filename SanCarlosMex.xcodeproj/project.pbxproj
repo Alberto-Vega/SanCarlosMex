@@ -37,22 +37,11 @@
 		BFEAEE1A1B2B912F00C4789D /* ActivitiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEAEE191B2B912F00C4789D /* ActivitiesTableViewController.swift */; };
 		BFEAEE1F1B2B912F00C4789D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFEAEE1E1B2B912F00C4789D /* Images.xcassets */; };
 		BFEAEE221B2B912F00C4789D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFEAEE201B2B912F00C4789D /* LaunchScreen.xib */; };
-		BFEAEE2E1B2B912F00C4789D /* SanCarlosMexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEAEE2D1B2B912F00C4789D /* SanCarlosMexTests.swift */; };
 		BFEAEE381B2BBBF800C4789D /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEAEE371B2BBBF800C4789D /* Activity.swift */; };
 		BFEAEE411B2BCB4F00C4789D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFEAEE401B2BCB4F00C4789D /* Main.storyboard */; };
 		BFF74F851BD08FF60028C638 /* PointOfInterest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF74F841BD08FF60028C638 /* PointOfInterest.swift */; };
 		BFF74F871BD0B91C0028C638 /* Beaches.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF74F861BD0B91C0028C638 /* Beaches.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		BFEAEE281B2B912F00C4789D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFEAEE0A1B2B912F00C4789D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BFEAEE111B2B912F00C4789D;
-			remoteInfo = SanCarlosMex;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		BF35D8F71B2E8A6000FD8E93 /* facebook-flat-vector-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook-flat-vector-logo.png"; sourceTree = "<group>"; };
@@ -89,7 +78,6 @@
 		BFEAEE191B2B912F00C4789D /* ActivitiesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesTableViewController.swift; sourceTree = "<group>"; };
 		BFEAEE1E1B2B912F00C4789D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BFEAEE211B2B912F00C4789D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		BFEAEE271B2B912F00C4789D /* SanCarlosMexTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SanCarlosMexTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFEAEE2C1B2B912F00C4789D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFEAEE2D1B2B912F00C4789D /* SanCarlosMexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanCarlosMexTests.swift; sourceTree = "<group>"; };
 		BFEAEE371B2BBBF800C4789D /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
@@ -104,13 +92,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF5E37601C420F9700CD4B50 /* MapKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BFEAEE241B2B912F00C4789D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,7 +142,6 @@
 			isa = PBXGroup;
 			children = (
 				BFEAEE121B2B912F00C4789D /* SanCarlosMex.app */,
-				BFEAEE271B2B912F00C4789D /* SanCarlosMexTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -272,24 +252,6 @@
 			productReference = BFEAEE121B2B912F00C4789D /* SanCarlosMex.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BFEAEE261B2B912F00C4789D /* SanCarlosMexTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BFEAEE341B2B912F00C4789D /* Build configuration list for PBXNativeTarget "SanCarlosMexTests" */;
-			buildPhases = (
-				BFEAEE231B2B912F00C4789D /* Sources */,
-				BFEAEE241B2B912F00C4789D /* Frameworks */,
-				BFEAEE251B2B912F00C4789D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BFEAEE291B2B912F00C4789D /* PBXTargetDependency */,
-			);
-			name = SanCarlosMexTests;
-			productName = SanCarlosMexTests;
-			productReference = BFEAEE271B2B912F00C4789D /* SanCarlosMexTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -309,10 +271,6 @@
 							};
 						};
 					};
-					BFEAEE261B2B912F00C4789D = {
-						CreatedOnToolsVersion = 6.3.2;
-						TestTargetID = BFEAEE111B2B912F00C4789D;
-					};
 				};
 			};
 			buildConfigurationList = BFEAEE0D1B2B912F00C4789D /* Build configuration list for PBXProject "SanCarlosMex" */;
@@ -329,7 +287,6 @@
 			projectRoot = "";
 			targets = (
 				BFEAEE111B2B912F00C4789D /* SanCarlosMex */,
-				BFEAEE261B2B912F00C4789D /* SanCarlosMexTests */,
 			);
 		};
 /* End PBXProject section */
@@ -359,13 +316,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BFEAEE251B2B912F00C4789D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -392,23 +342,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BFEAEE231B2B912F00C4789D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BFEAEE2E1B2B912F00C4789D /* SanCarlosMexTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		BFEAEE291B2B912F00C4789D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BFEAEE111B2B912F00C4789D /* SanCarlosMex */;
-			targetProxy = BFEAEE281B2B912F00C4789D /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BFEAEE201B2B912F00C4789D /* LaunchScreen.xib */ = {
@@ -428,7 +362,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_MODULES = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -473,7 +407,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_MODULES = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -500,6 +434,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -533,42 +468,6 @@
 			};
 			name = Release;
 		};
-		BFEAEE351B2B912F00C4789D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SanCarlosMexTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SanCarlosMex.app/SanCarlosMex";
-			};
-			name = Debug;
-		};
-		BFEAEE361B2B912F00C4789D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SanCarlosMexTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SanCarlosMex.app/SanCarlosMex";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -586,15 +485,6 @@
 			buildConfigurations = (
 				BFEAEE321B2B912F00C4789D /* Debug */,
 				BFEAEE331B2B912F00C4789D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BFEAEE341B2B912F00C4789D /* Build configuration list for PBXNativeTarget "SanCarlosMexTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BFEAEE351B2B912F00C4789D /* Debug */,
-				BFEAEE361B2B912F00C4789D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
