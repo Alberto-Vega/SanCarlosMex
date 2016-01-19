@@ -13,7 +13,7 @@ class PointOfInterest {
     
     let name, shortDescription, address, features, hours, notes: String
     var image:UIImage?
-    let coordinate: CLLocationCoordinate2D
+    let coordinate: CLLocationCoordinate2D?
     
     init(name: String, shortDescription: String, address: String, features: String, hours: String, notes: String, image: String, coordinate: CLLocationCoordinate2D) {
         self.name = name

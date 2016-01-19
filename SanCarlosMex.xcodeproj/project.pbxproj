@@ -32,11 +32,11 @@
 		BF8D97921C0ECA860024C71D /* POIDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8D97911C0ECA860024C71D /* POIDetailViewController.swift */; };
 		BFBC18651B54BC4C001D6F02 /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBC18641B54BC4C001D6F02 /* CategoriesTableViewController.swift */; };
 		BFBC18671B556ED2001D6F02 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBC18661B556ED2001D6F02 /* Restaurant.swift */; };
+		BFD4FF6C1C4E157B005B0A7E /* SanCarlosMexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD4FF6B1C4E157B005B0A7E /* SanCarlosMexTests.swift */; };
 		BFEAEE181B2B912F00C4789D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEAEE171B2B912F00C4789D /* AppDelegate.swift */; };
 		BFEAEE1A1B2B912F00C4789D /* ActivitiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEAEE191B2B912F00C4789D /* ActivitiesTableViewController.swift */; };
 		BFEAEE1F1B2B912F00C4789D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFEAEE1E1B2B912F00C4789D /* Images.xcassets */; };
 		BFEAEE221B2B912F00C4789D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFEAEE201B2B912F00C4789D /* LaunchScreen.xib */; };
-		BFEAEE2E1B2B912F00C4789D /* SanCarlosMexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEAEE2D1B2B912F00C4789D /* SanCarlosMexTests.swift */; };
 		BFEAEE381B2BBBF800C4789D /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEAEE371B2BBBF800C4789D /* Activity.swift */; };
 		BFEAEE411B2BCB4F00C4789D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFEAEE401B2BCB4F00C4789D /* Main.storyboard */; };
 		BFF74F851BD08FF60028C638 /* PointOfInterest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF74F841BD08FF60028C638 /* PointOfInterest.swift */; };
@@ -44,7 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		BFEAEE281B2B912F00C4789D /* PBXContainerItemProxy */ = {
+		BFD4FF6E1C4E157B005B0A7E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFEAEE0A1B2B912F00C4789D /* Project object */;
 			proxyType = 1;
@@ -81,15 +81,15 @@
 		BF8D97911C0ECA860024C71D /* POIDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POIDetailViewController.swift; sourceTree = "<group>"; };
 		BFBC18641B54BC4C001D6F02 /* CategoriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewController.swift; sourceTree = "<group>"; };
 		BFBC18661B556ED2001D6F02 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		BFD4FF691C4E157B005B0A7E /* SanCarlosMexTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SanCarlosMexTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFD4FF6B1C4E157B005B0A7E /* SanCarlosMexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanCarlosMexTests.swift; sourceTree = "<group>"; };
+		BFD4FF6D1C4E157B005B0A7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFEAEE121B2B912F00C4789D /* SanCarlosMex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SanCarlosMex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFEAEE161B2B912F00C4789D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFEAEE171B2B912F00C4789D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFEAEE191B2B912F00C4789D /* ActivitiesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesTableViewController.swift; sourceTree = "<group>"; };
 		BFEAEE1E1B2B912F00C4789D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BFEAEE211B2B912F00C4789D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		BFEAEE271B2B912F00C4789D /* SanCarlosMexTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SanCarlosMexTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BFEAEE2C1B2B912F00C4789D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BFEAEE2D1B2B912F00C4789D /* SanCarlosMexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanCarlosMexTests.swift; sourceTree = "<group>"; };
 		BFEAEE371B2BBBF800C4789D /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		BFEAEE401B2BCB4F00C4789D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		BFF74F841BD08FF60028C638 /* PointOfInterest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointOfInterest.swift; sourceTree = "<group>"; };
@@ -97,18 +97,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BFD4FF661C4E157B005B0A7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BFEAEE0F1B2B912F00C4789D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BF5E37601C420F9700CD4B50 /* MapKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BFEAEE241B2B912F00C4789D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,12 +136,21 @@
 			name = PointsOfInterest;
 			sourceTree = "<group>";
 		};
+		BFD4FF6A1C4E157B005B0A7E /* SanCarlosMexTests */ = {
+			isa = PBXGroup;
+			children = (
+				BFD4FF6B1C4E157B005B0A7E /* SanCarlosMexTests.swift */,
+				BFD4FF6D1C4E157B005B0A7E /* Info.plist */,
+			);
+			path = SanCarlosMexTests;
+			sourceTree = "<group>";
+		};
 		BFEAEE091B2B912F00C4789D = {
 			isa = PBXGroup;
 			children = (
 				BF5E375F1C420F9700CD4B50 /* MapKit.framework */,
 				BFEAEE141B2B912F00C4789D /* SanCarlosMex */,
-				BFEAEE2A1B2B912F00C4789D /* SanCarlosMexTests */,
+				BFD4FF6A1C4E157B005B0A7E /* SanCarlosMexTests */,
 				BFEAEE131B2B912F00C4789D /* Products */,
 				BF85AE6C1C338B4A004292E6 /* SanCarlosMex-Bridging-Header.h */,
 			);
@@ -151,7 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				BFEAEE121B2B912F00C4789D /* SanCarlosMex.app */,
-				BFEAEE271B2B912F00C4789D /* SanCarlosMexTests.xctest */,
+				BFD4FF691C4E157B005B0A7E /* SanCarlosMexTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -192,23 +201,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		BFEAEE2A1B2B912F00C4789D /* SanCarlosMexTests */ = {
-			isa = PBXGroup;
-			children = (
-				BFEAEE2D1B2B912F00C4789D /* SanCarlosMexTests.swift */,
-				BFEAEE2B1B2B912F00C4789D /* Supporting Files */,
-			);
-			path = SanCarlosMexTests;
-			sourceTree = "<group>";
-		};
-		BFEAEE2B1B2B912F00C4789D /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				BFEAEE2C1B2B912F00C4789D /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		BFEAEE3A1B2BBC4700C4789D /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +236,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		BFD4FF681C4E157B005B0A7E /* SanCarlosMexTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFD4FF701C4E157B005B0A7E /* Build configuration list for PBXNativeTarget "SanCarlosMexTests" */;
+			buildPhases = (
+				BFD4FF651C4E157B005B0A7E /* Sources */,
+				BFD4FF661C4E157B005B0A7E /* Frameworks */,
+				BFD4FF671C4E157B005B0A7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFD4FF6F1C4E157B005B0A7E /* PBXTargetDependency */,
+			);
+			name = SanCarlosMexTests;
+			productName = SanCarlosMexTests;
+			productReference = BFD4FF691C4E157B005B0A7E /* SanCarlosMexTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		BFEAEE111B2B912F00C4789D /* SanCarlosMex */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFEAEE311B2B912F00C4789D /* Build configuration list for PBXNativeTarget "SanCarlosMex" */;
@@ -261,24 +271,6 @@
 			productReference = BFEAEE121B2B912F00C4789D /* SanCarlosMex.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BFEAEE261B2B912F00C4789D /* SanCarlosMexTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BFEAEE341B2B912F00C4789D /* Build configuration list for PBXNativeTarget "SanCarlosMexTests" */;
-			buildPhases = (
-				BFEAEE231B2B912F00C4789D /* Sources */,
-				BFEAEE241B2B912F00C4789D /* Frameworks */,
-				BFEAEE251B2B912F00C4789D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BFEAEE291B2B912F00C4789D /* PBXTargetDependency */,
-			);
-			name = SanCarlosMexTests;
-			productName = SanCarlosMexTests;
-			productReference = BFEAEE271B2B912F00C4789D /* SanCarlosMexTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -290,6 +282,10 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Alberto Vega Gonzalez";
 				TargetAttributes = {
+					BFD4FF681C4E157B005B0A7E = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = BFEAEE111B2B912F00C4789D;
+					};
 					BFEAEE111B2B912F00C4789D = {
 						CreatedOnToolsVersion = 6.3.2;
 						SystemCapabilities = {
@@ -297,10 +293,6 @@
 								enabled = 1;
 							};
 						};
-					};
-					BFEAEE261B2B912F00C4789D = {
-						CreatedOnToolsVersion = 6.3.2;
-						TestTargetID = BFEAEE111B2B912F00C4789D;
 					};
 				};
 			};
@@ -318,12 +310,19 @@
 			projectRoot = "";
 			targets = (
 				BFEAEE111B2B912F00C4789D /* SanCarlosMex */,
-				BFEAEE261B2B912F00C4789D /* SanCarlosMexTests */,
+				BFD4FF681C4E157B005B0A7E /* SanCarlosMexTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BFD4FF671C4E157B005B0A7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BFEAEE101B2B912F00C4789D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -348,16 +347,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BFEAEE251B2B912F00C4789D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BFD4FF651C4E157B005B0A7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFD4FF6C1C4E157B005B0A7E /* SanCarlosMexTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BFEAEE0E1B2B912F00C4789D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -380,21 +380,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BFEAEE231B2B912F00C4789D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BFEAEE2E1B2B912F00C4789D /* SanCarlosMexTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BFEAEE291B2B912F00C4789D /* PBXTargetDependency */ = {
+		BFD4FF6F1C4E157B005B0A7E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BFEAEE111B2B912F00C4789D /* SanCarlosMex */;
-			targetProxy = BFEAEE281B2B912F00C4789D /* PBXContainerItemProxy */;
+			targetProxy = BFD4FF6E1C4E157B005B0A7E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -410,6 +402,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		BFD4FF711C4E157B005B0A7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = SanCarlosMexTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.albertovega.SanCarlosMexTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SanCarlosMex.app/SanCarlosMex";
+			};
+			name = Debug;
+		};
+		BFD4FF721C4E157B005B0A7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				INFOPLIST_FILE = SanCarlosMexTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.albertovega.SanCarlosMexTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SanCarlosMex.app/SanCarlosMex";
+			};
+			name = Release;
+		};
 		BFEAEE2F1B2B912F00C4789D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -429,7 +449,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -447,11 +467,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -485,9 +506,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -521,45 +543,18 @@
 			};
 			name = Release;
 		};
-		BFEAEE351B2B912F00C4789D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SanCarlosMexTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SanCarlosMex.app/SanCarlosMex";
-			};
-			name = Debug;
-		};
-		BFEAEE361B2B912F00C4789D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SanCarlosMexTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SanCarlosMex.app/SanCarlosMex";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BFD4FF701C4E157B005B0A7E /* Build configuration list for PBXNativeTarget "SanCarlosMexTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFD4FF711C4E157B005B0A7E /* Debug */,
+				BFD4FF721C4E157B005B0A7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BFEAEE0D1B2B912F00C4789D /* Build configuration list for PBXProject "SanCarlosMex" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -574,15 +569,6 @@
 			buildConfigurations = (
 				BFEAEE321B2B912F00C4789D /* Debug */,
 				BFEAEE331B2B912F00C4789D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BFEAEE341B2B912F00C4789D /* Build configuration list for PBXNativeTarget "SanCarlosMexTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BFEAEE351B2B912F00C4789D /* Debug */,
-				BFEAEE361B2B912F00C4789D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

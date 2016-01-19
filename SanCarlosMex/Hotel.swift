@@ -16,7 +16,7 @@ class Hotel: PointOfInterest {
     var accomodations: String
     var services: String
     
-    init(name: String, shortDescription: String, address: String, features: String, hours: String, notes: String, image: String, coordinate: CLLocationCoordinate2D, stars: Int, phone: String, accomodations: String, services: String) {
+    init?(name: String, shortDescription: String, address: String, features: String, hours: String, notes: String, image: String, coordinate: CLLocationCoordinate2D, stars: Int, phone: String, accomodations: String, services: String) {
         self.stars = stars
         self.phone = phone
         self.accomodations = accomodations
