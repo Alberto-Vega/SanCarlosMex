@@ -44,8 +44,10 @@ setupPointsOfInterest()
             XCTAssertNotNil(potentialCategory)
     }
     
+    
     func setupPointsOfInterest() {
         
+    // Helper function to test CategoryInitialization.
         
         let potentialPointOfInterest = PointOfInterest(name: "No Coordinate POI", shortDescription: "No Coordinate POI", address: "Cupertino Road 123, Seattle, WA", features: "No Coordinate POI", hours: "No Coordinate POI", notes: "No Coordinate POI", image: "NoCoordinatePOI.jpg", coordinate: CLLocationCoordinate2D(latitude: 41.40338, longitude: 2.17403))
         arrayOfTestPOI.append(potentialPointOfInterest)
