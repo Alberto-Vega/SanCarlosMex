@@ -23,8 +23,7 @@ class PointOfInterest {
         self.hours = hours
         self.notes = notes
         self.image = UIImage(named: image)
-        self.latitude = latitude
-        self.longitude = longitude
+        self.coordinate = CLLocationCoordinate2DMake(latitude, longitude)
     }
 }
 
