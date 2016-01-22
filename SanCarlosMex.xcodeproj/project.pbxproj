@@ -34,6 +34,7 @@
 		BFBC18651B54BC4C001D6F02 /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBC18641B54BC4C001D6F02 /* CategoriesTableViewController.swift */; };
 		BFBC18671B556ED2001D6F02 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBC18661B556ED2001D6F02 /* Restaurant.swift */; };
 		BFD4FF6C1C4E157B005B0A7E /* SanCarlosMexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD4FF6B1C4E157B005B0A7E /* SanCarlosMexTests.swift */; };
+		BFD4FF741C52E91B005B0A7E /* FoursquareAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD4FF731C52E91B005B0A7E /* FoursquareAPITests.swift */; };
 		BFEAEE181B2B912F00C4789D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEAEE171B2B912F00C4789D /* AppDelegate.swift */; };
 		BFEAEE1A1B2B912F00C4789D /* ActivitiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEAEE191B2B912F00C4789D /* ActivitiesTableViewController.swift */; };
 		BFEAEE1F1B2B912F00C4789D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFEAEE1E1B2B912F00C4789D /* Images.xcassets */; };
@@ -86,6 +87,7 @@
 		BFD4FF691C4E157B005B0A7E /* SanCarlosMexTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SanCarlosMexTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD4FF6B1C4E157B005B0A7E /* SanCarlosMexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanCarlosMexTests.swift; sourceTree = "<group>"; };
 		BFD4FF6D1C4E157B005B0A7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFD4FF731C52E91B005B0A7E /* FoursquareAPITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoursquareAPITests.swift; sourceTree = "<group>"; };
 		BFEAEE121B2B912F00C4789D /* SanCarlosMex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SanCarlosMex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFEAEE161B2B912F00C4789D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFEAEE171B2B912F00C4789D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 		BFD4FF6A1C4E157B005B0A7E /* SanCarlosMexTests */ = {
 			isa = PBXGroup;
 			children = (
+				BFD4FF731C52E91B005B0A7E /* FoursquareAPITests.swift */,
 				BFD4FF6B1C4E157B005B0A7E /* SanCarlosMexTests.swift */,
 				BFD4FF6D1C4E157B005B0A7E /* Info.plist */,
 			);
@@ -366,6 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFD4FF6C1C4E157B005B0A7E /* SanCarlosMexTests.swift in Sources */,
+				BFD4FF741C52E91B005B0A7E /* FoursquareAPITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

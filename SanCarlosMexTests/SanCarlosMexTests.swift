@@ -49,35 +49,35 @@ setupPointsOfInterest()
         
     // Helper function to test CategoryInitialization.
         
-        let potentialPointOfInterest = PointOfInterest(name: "No Coordinate POI", shortDescription: "No Coordinate POI", address: "Cupertino Road 123, Seattle, WA", features: "No Coordinate POI", hours: "No Coordinate POI", notes: "No Coordinate POI", image: "NoCoordinatePOI.jpg", coordinate: CLLocationCoordinate2D(latitude: 41.40338, longitude: 2.17403))
+        let potentialPointOfInterest = PointOfInterest(name: "No Coordinate POI", shortDescription: "No Coordinate POI", address: "Cupertino Road 123, Seattle, WA", features: "No Coordinate POI", hours: "No Coordinate POI", notes: "No Coordinate POI", image: "NoCoordinatePOI.jpg", latitude: 41.40338, longitude: 2.17403)
         arrayOfTestPOI.append(potentialPointOfInterest)
     }
     
     func testPointOfInterstInitialization() {
         // Success case.
         
-        let potentialPointOfInterest = PointOfInterest(name: "No Coordinate POI", shortDescription: "No Coordinate POI", address: "Cupertino Road 123, Seattle, WA", features: "No Coordinate POI", hours: "No Coordinate POI", notes: "No Coordinate POI", image: "NoCoordinatePOI.jpg", coordinate: CLLocationCoordinate2D(latitude: 41.40338, longitude: 2.17403))
+        let potentialPointOfInterest = PointOfInterest(name: "No Coordinate POI", shortDescription: "No Coordinate POI", address: "Cupertino Road 123, Seattle, WA", features: "No Coordinate POI", hours: "No Coordinate POI", notes: "No Coordinate POI", image: "NoCoordinatePOI.jpg", latitude: 41.40338, longitude: 2.17403)
         XCTAssertNotNil(potentialPointOfInterest)
     }
     
     func testRestaurantInitialization() {
         // Success case.
-       let potentialRestaurant = Restaurant(name: "Piccolo", shortDescription: "Italian Food", address: "Beltrones Avenue, San Carlos, Mexico", features: "Not only is the food really good, but the atmosphere is cozy and inviting.", hours: "Wed - Sat 6:30 pm - 11:00 pm", notes: "Great food and good service.", image: "piccolo.jpg",coordinate: CLLocationCoordinate2D(latitude: 27.9603909, longitude: -111.0347736), cuisine: "Italian", phone: "622-226-0503")
+       let potentialRestaurant = Restaurant(name: "Piccolo", shortDescription: "Italian Food", address: "Beltrones Avenue, San Carlos, Mexico", features: "Not only is the food really good, but the atmosphere is cozy and inviting.", hours: "Wed - Sat 6:30 pm - 11:00 pm", notes: "Great food and good service.", image: "piccolo.jpg",latitude: 27.9603909, longitude: -111.0347736, cuisine: "Italian", phone: "622-226-0503")
         XCTAssertNotNil(potentialRestaurant)
     }
     
     func testBeachInitialization() {
-        let potentialBeach = Beach(name: "Potential Beach", shortDescription: "Semi-Private Beach", address: "Test Beach", features: "This is a great place to snorkel, dive, swim and kayak. It is a beautiful quiet area.", hours: "No hour restrictions", notes: "This is just a test beach", image: "kayaking.JPG",coordinate: CLLocationCoordinate2D(latitude: 27.9466385, longitude: -111.0613993), experience: "test beach")
+        let potentialBeach = Beach(name: "Potential Beach", shortDescription: "Semi-Private Beach", address: "Test Beach", features: "This is a great place to snorkel, dive, swim and kayak. It is a beautiful quiet area.", hours: "No hour restrictions", notes: "This is just a test beach", image: "kayaking.JPG",latitude: 27.9466385, longitude: -111.0613993, experience: "test beach")
         XCTAssertNotNil(potentialBeach)
     }
     
     func testHotelInitialization() {
-        let potentialHotel = Hotel(name: "Test Hotel", shortDescription: "Test Hotel", address: "Test Hotel Address", features: "This is just a test Hotel", hours: "Test Hotel hours", notes: "This is just a test Hotel", image: "kayaking.JPG", coordinate: CLLocationCoordinate2D(latitude: 27.9466385, longitude: -111.0613993), stars: 4, phone: "Test Hotel phone", accomodations: "Test Hotel Accomodations", services: "Test Hotel Services")
+        let potentialHotel = Hotel(name: "Test Hotel", shortDescription: "Test Hotel", address: "Test Hotel Address", features: "This is just a test Hotel", hours: "Test Hotel hours", notes: "This is just a test Hotel", image: "kayaking.JPG", latitude: 27.9466385, longitude: -111.0613993, stars: 4, phone: "Test Hotel phone", accomodations: "Test Hotel Accomodations", services: "Test Hotel Services")
         XCTAssertNotNil(potentialHotel)
     }
     
     func testAdventureInitialization() {
-        let potentialAdventure = Adventure(name: "Test Adventure", shortDescription: "Test Adventure description", address: "Test adventure address", features: "Test Adventure Features", hours: "Test Adventure hours", notes: "Test Adventure notes", image: "kayaking.JPG", coordinate: CLLocationCoordinate2D(latitude: 27.9466385, longitude: -111.0613993), experience: "Test Adventure Experience", details: "Test Adventure details", preparations: "Preparations for Test Adventure", requirements: "Test Adventure")
+        let potentialAdventure = Adventure(name: "Test Adventure", shortDescription: "Test Adventure description", address: "Test adventure address", features: "Test Adventure Features", hours: "Test Adventure hours", notes: "Test Adventure notes", image: "kayaking.JPG",latitude: 27.9466385, longitude: -111.0613993, experience: "Test Adventure Experience", details: "Test Adventure details", preparations: "Preparations for Test Adventure", requirements: "Test Adventure")
         XCTAssertNotNil(potentialAdventure)
     }
     
