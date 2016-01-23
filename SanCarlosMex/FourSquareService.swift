@@ -11,7 +11,7 @@ import UIKit
 let foursquareAPIClientID = "C20JVM0GH2IVU1FA4MZV2GBYP1040GYUSAO5HT2K2AC32RF2"
 let foursquareAPIClientSecret = "54HG0YGMDQHTCTC0SE1IXXKY5SD3244PK204EWPHXLEOQU4O"
 
-let foursquareVenueSearchURL = "https://api.foursquare.com/v2/venues/search"
+let foursquareVenueSearchURL = "https://api.foursquare.com/v2/venues/searchxdckfkehdj"
 
 let foursquareImageRequestURL = "https://api.foursquare.com/v2/venues/"
 
@@ -118,7 +118,7 @@ class FourSquareService {
                     if let venues = response["venues"] as? [[String: AnyObject]] {
                         var venueArray = [Restaurant]()
                         for venue in venues {
-                            if let id = venue["id"] as? String, name = venue["name"] as? String, location = venue["location"] as? [String : AnyObject], address = location["address"] as? String, distance = location["distance"] as? Int, lat = location["lat"] as? Double, long = location["lng"] as? Double, stats = venue["stats"] as? [String : AnyObject], userCount = stats["usersCount"] as? Int {
+                            if let name = venue["name"] as? String, location = venue["location"] as? [String : AnyObject], address = location["address"] as? String, distance = location["distance"] as? Int, lat = location["lat"] as? Double, long = location["lng"] as? Double, stats = venue["stats"] as? [String : AnyObject], userCount = stats["usersCount"] as? Int {
                                 
                                 let venue = Restaurant(name: name, shortDescription: "", address: address, features: "", hours: "", notes: "", image: "", latitude: lat, longitude: long, cuisine: "", phone: "")
                                 

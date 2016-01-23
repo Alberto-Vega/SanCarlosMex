@@ -17,7 +17,7 @@ class SanCarlosMexTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-setupPointsOfInterest()
+        setupPointsOfInterest()
         
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -30,6 +30,7 @@ setupPointsOfInterest()
     func testActivityInitialization() {
         //Success cases.
         let potentialActivity = Activity(name: "Test Activity", image: UIImage(named: "delfines.jpg"))
+        
         XCTAssertNotNil(potentialActivity)
         
         let noPhoto = Activity(name: "No photo Activity", image: nil)

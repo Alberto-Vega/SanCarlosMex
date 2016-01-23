@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import SanCarlosMex
 
 class FoursquareAPITests: XCTestCase {
     
@@ -20,9 +21,25 @@ class FoursquareAPITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testSearchVenuesSuccess() {
+        let expectation = expectationWithDescription("Expecting the network call to suceed")
+        
+        FourSquareService.searchVenues("Restaurants") { (success, data) -> () in
+            if success {
+                expectation.fulfill()
+            } else {
+                XCTFail("Network call failed!")
+            }
+        }
+        waitForExpectationsWithTimeout(3, handler: nil)
+    }
+    
+    func testParseVenueResponseFail() {
+        let mockData: NSData?
+        FourSquareService.parseVenueResponse(mockData) { (success, venues) -> () in
+            <#code#>
+        }
+        
     }
     
     func testPerformanceExample() {
