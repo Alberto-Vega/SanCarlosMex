@@ -31,6 +31,7 @@
 		BF77DC121BD4ADDF0084562E /* CategoryItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF77DC111BD4ADDF0084562E /* CategoryItemsTableViewController.swift */; };
 		BF85AE6F1C338B4B004292E6 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF85AE6E1C338B4B004292E6 /* MapViewController.m */; };
 		BF8D97921C0ECA860024C71D /* POIDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8D97911C0ECA860024C71D /* POIDetailViewController.swift */; };
+		BFA1C5D51C5887BE001DAA42 /* Foursquare.json in Resources */ = {isa = PBXBuildFile; fileRef = BFA1C5D41C5887BE001DAA42 /* Foursquare.json */; };
 		BFBC18651B54BC4C001D6F02 /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBC18641B54BC4C001D6F02 /* CategoriesTableViewController.swift */; };
 		BFBC18671B556ED2001D6F02 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBC18661B556ED2001D6F02 /* Restaurant.swift */; };
 		BFD4FF6C1C4E157B005B0A7E /* SanCarlosMexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD4FF6B1C4E157B005B0A7E /* SanCarlosMexTests.swift */; };
@@ -82,6 +83,7 @@
 		BF85AE6D1C338B4B004292E6 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		BF85AE6E1C338B4B004292E6 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		BF8D97911C0ECA860024C71D /* POIDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POIDetailViewController.swift; sourceTree = "<group>"; };
+		BFA1C5D41C5887BE001DAA42 /* Foursquare.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Foursquare.json; path = ../Foursquare.json; sourceTree = "<group>"; };
 		BFBC18641B54BC4C001D6F02 /* CategoriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewController.swift; sourceTree = "<group>"; };
 		BFBC18661B556ED2001D6F02 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		BFD4FF691C4E157B005B0A7E /* SanCarlosMexTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SanCarlosMexTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,6 +153,7 @@
 		BFD4FF6A1C4E157B005B0A7E /* SanCarlosMexTests */ = {
 			isa = PBXGroup;
 			children = (
+				BFA1C5D41C5887BE001DAA42 /* Foursquare.json */,
 				BFD4FF731C52E91B005B0A7E /* FoursquareAPITests.swift */,
 				BFD4FF6B1C4E157B005B0A7E /* SanCarlosMexTests.swift */,
 				BFD4FF6D1C4E157B005B0A7E /* Info.plist */,
@@ -357,6 +360,7 @@
 				BF35D8F81B2E8A6000FD8E93 /* facebook-flat-vector-logo.png in Resources */,
 				BF494F9C1B2D40820007115A /* boatRides.JPG in Resources */,
 				BF494F9A1B2D40820007115A /* kayaking.JPG in Resources */,
+				BFA1C5D51C5887BE001DAA42 /* Foursquare.json in Resources */,
 				BF494F9D1B2D40820007115A /* horseRiding.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

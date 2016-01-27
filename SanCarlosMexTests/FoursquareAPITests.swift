@@ -35,11 +35,43 @@ class FoursquareAPITests: XCTestCase {
     }
     
     func testParseVenueResponseFail() {
-        let mockData: NSData?
-        FourSquareService.parseVenueResponse(mockData) { (success, venues) -> () in
-            <#code#>
+        //Tests the parse function to fail
+        let mockDataString = "Mock Data"
+        if let mockData = (mockDataString as NSString).dataUsingEncoding(NSUTF8StringEncoding) {
+
+                FourSquareService.parseVenueResponse(mockData) { (success, venues) -> () in
+                    if success {
+                        XCTAssertEqual(venues![0].name, "Restaurant San Andres Hermosillo", "venues are not parsing correctly")
+                        XCTAssertTrue(success, "The test failed, success is true")
+                    } else {
+                        XCTAssertFalse(success, "Fail test succeeded sucess is false")
+                    }
+            }
+            }
         }
-        
+    
+    func testParseVenueResponse() {
+        //Tests the parse function to success
+
+        if let JSONfile = NSBundle.mainBundle().URLForResource("Foursquare", withExtension: "json") {
+            
+            do {
+                let mockData = try NSData(contentsOfURL: JSONfile, options: NSDataReadingOptions.DataReadingUncached)
+                
+                FourSquareService.parseVenueResponse(mockData) { (success, venues) -> () in
+                    if success {
+                        if let venues = venues {
+                        XCTAssertEqual(venues[0].name, "Restaurant San Andres Hermosillo", "venues are not parsing correctly")
+                        XCTAssertTrue(success, "The test passed, success is true")
+                        }
+                    } else {
+                        XCTAssertFalse(success, "Fail test sucess is false")
+                    }
+                }
+            } catch {
+                error
+            }
+        }
     }
     
     func testPerformanceExample() {
@@ -48,5 +80,4 @@ class FoursquareAPITests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-    
 }

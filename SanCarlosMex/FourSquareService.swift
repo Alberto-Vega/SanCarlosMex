@@ -10,13 +10,10 @@ import UIKit
 
 let foursquareAPIClientID = "C20JVM0GH2IVU1FA4MZV2GBYP1040GYUSAO5HT2K2AC32RF2"
 let foursquareAPIClientSecret = "54HG0YGMDQHTCTC0SE1IXXKY5SD3244PK204EWPHXLEOQU4O"
-
-let foursquareVenueSearchURL = "https://api.foursquare.com/v2/venues/searchxdckfkehdj"
-
+let foursquareVenueSearchURL = "https://api.foursquare.com/v2/venues/search"
 let foursquareImageRequestURL = "https://api.foursquare.com/v2/venues/"
 
 let cfLatLong = "29.0829993,-110.9417548"
-
 let apiVersion = "20130815"
 
 class FourSquareService {
@@ -37,7 +34,6 @@ class FourSquareService {
                 completion(success: false, data: nil)
             }
             }.resume()
-        
     }
     
     class func fetchImageFromFetchRequest(requestData: NSData, completion: (success: Bool, image: UIImage?)->()) {
@@ -61,7 +57,6 @@ class FourSquareService {
                     })
                 }
             }
-            
         } catch {}
         completion(success: false, image: nil)
     }
@@ -87,7 +82,6 @@ class FourSquareService {
                     })
                 }
             }
-            
         } catch {}
         completion(success: false, image: nil)
     }
@@ -95,12 +89,14 @@ class FourSquareService {
     class func searchVenues(queryString: String, completion: (success: Bool, data: NSData?)->()) {
         
         let urlString = "\(foursquareVenueSearchURL)?client_id=\(foursquareAPIClientID)&client_secret=\(foursquareAPIClientSecret)&ll=\(cfLatLong)&v=\(apiVersion)&query=\(queryString)"
+        print(urlString)
         guard let url = NSURL(string: urlString) else { return }
         let request = NSMutableURLRequest(URL: url)
         request.HTTPMethod = "GET"
         NSURLSession.sharedSession().dataTaskWithRequest(request) { (data, response, error) -> Void in
             if let data = data {
                 completion(success: true, data: data)
+                print(data)
             }
             if let _ = error {
                 if let response = response as? NSHTTPURLResponse {

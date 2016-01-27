@@ -24,8 +24,6 @@ class CategoriesTableViewController: UITableViewController {
         
         super.viewDidLoad()
         setupTableViewBackGroundPhoto()
-        
-        
         createRestaurants()
         createBeaches()
 //        createCategories()
