@@ -39,10 +39,13 @@ class SanCarlosMexTests: XCTestCase {
     }
     
     func testCategoryInitialization() {
-
+        
         let potentialCategory = Category(name:"Test", image: "delfines.jpg", pointsOfInterest: arrayOfTestPOI)
         
-            XCTAssertNotNil(potentialCategory)
+        XCTAssert(potentialCategory.pointsOfInterest?.count == 1 )
+        XCTAssert(potentialCategory.name == "Test")
+        XCTAssert(potentialCategory.pointsOfInterest![0].name == "No Coordinate POI")
+        XCTAssertNotNil(potentialCategory)
     }
     
     

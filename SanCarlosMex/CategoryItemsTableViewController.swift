@@ -17,10 +17,10 @@ class CategoryItemsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("The category passed is \(selectedCategory?.name)")
-        if let selected = selectedCategory {
-            print("Number of restaurants: \(selectedCategory?.pointsOfInterest?[0].name)")
+//        if let selected = selectedCategory {
+//            print("Number of restaurants: \(selectedCategory!.pointsOfInterest?[0].name)")
         setupTableViewBackGroundPhoto()
-        }
+//        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -44,7 +44,8 @@ class CategoryItemsTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         print(selectedCategory)
-        return selectedCategory!.pointsOfInterest!.count
+        
+        return (selectedCategory?.pointsOfInterest?.count)!
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

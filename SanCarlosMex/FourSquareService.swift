@@ -12,9 +12,14 @@ let foursquareAPIClientID = "C20JVM0GH2IVU1FA4MZV2GBYP1040GYUSAO5HT2K2AC32RF2"
 let foursquareAPIClientSecret = "54HG0YGMDQHTCTC0SE1IXXKY5SD3244PK204EWPHXLEOQU4O"
 let foursquareVenueSearchURL = "https://api.foursquare.com/v2/venues/search"
 let foursquareImageRequestURL = "https://api.foursquare.com/v2/venues/"
+//https://api.foursquare.com/v2/venues/search?sw=27.924982, -111.132005&ne=28.031358, -110.951605&intent=browse&query=restaurant&oauth_token=CQUHLVFES3OP4FW00TROO2EDW43SQA2PZQUDAHV1RFNXI3ZC&v=20160214
 
-let cfLatLong = "29.0829993,-110.9417548"
-let apiVersion = "20130815"
+
+
+let cfLatLong = "27.9598417,-111.0571345"
+let sw = "27.924982,-111.132005"
+let ne = "28.031358,-110.951605"
+let apiVersion = "20160214"
 
 class FourSquareService {
     
@@ -88,7 +93,14 @@ class FourSquareService {
     
     class func searchVenues(queryString: String, completion: (success: Bool, data: NSData?)->()) {
         
-        let urlString = "\(foursquareVenueSearchURL)?client_id=\(foursquareAPIClientID)&client_secret=\(foursquareAPIClientSecret)&ll=\(cfLatLong)&v=\(apiVersion)&query=\(queryString)"
+//        let urlString = "\(foursquareVenueSearchURL)?client_id=\(foursquareAPIClientID)&client_secret=\(foursquareAPIClientSecret)&ll=\(cfLatLong)&v=\(apiVersion)&query=\(queryString)"
+        
+        //https://api.foursquare.com/v2/venues/search?sw=27.924982, -111.132005&ne=28.031358, -110.951605&intent=browse&query=restaurant&oauth_token=CQUHLVFES3OP4FW00TROO2EDW43SQA2PZQUDAHV1RFNXI3ZC&v=20160214
+       // https://api.foursquare.com/v2/venues/search?sw=27.924982, -111.132005&ne=28.031358, -110.951605&intent=browse&query=restaurant&oauth_token=CQUHLVFES3OP4FW00TROO2EDW43SQA2PZQUDAHV1RFNXI3ZC&v=20160215
+        
+        let urlString = "\(foursquareVenueSearchURL)?client_id=\(foursquareAPIClientID)&client_secret=\(foursquareAPIClientSecret)&sw=\(sw)&ne=\(ne)&intent=browse&v=\(apiVersion)&query=\(queryString)"
+        
+        
         print(urlString)
         guard let url = NSURL(string: urlString) else { return }
         let request = NSMutableURLRequest(URL: url)
@@ -96,7 +108,7 @@ class FourSquareService {
         NSURLSession.sharedSession().dataTaskWithRequest(request) { (data, response, error) -> Void in
             if let data = data {
                 completion(success: true, data: data)
-                print(data)
+                print("Request received data")
             }
             if let _ = error {
                 if let response = response as? NSHTTPURLResponse {

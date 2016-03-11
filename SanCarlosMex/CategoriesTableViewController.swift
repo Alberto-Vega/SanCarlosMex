@@ -26,7 +26,8 @@ class CategoriesTableViewController: UITableViewController {
         setupTableViewBackGroundPhoto()
         createRestaurants()
         createBeaches()
-//        createCategories()
+
+
 
 //        print("In view did load we have cuisine: \(restaurants[0].cuisine) name \(restaurants[0].name)")
 //        print("ViewdidLoad categories: \(categories.count)")
@@ -40,38 +41,47 @@ class CategoriesTableViewController: UITableViewController {
 //        print("In view didApper we have pointsofInterest: \(categories[0].pointsOfInterest!.count)")
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.createCategories()
+
+
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
     //MARK: helper functions.
     
-    func createCategories ()-> [Category] {
+    func createCategories () {
         
-        let restaurantCategory = Category(name: "Restaurants", image: "dining.JPG", pointsOfInterest: restaurants)
         let beachesCategory = Category(name: "Beaches", image: "kayaking.JPG", pointsOfInterest: beaches)
-        print(restaurants.count)
-        print(restaurantCategory.pointsOfInterest?.count)
+//        print(restaurantCategory.pointsOfInterest?.count)
         let hotelCategory = Category(name: "Hotels", image: "kayaking.JPG", pointsOfInterest: restaurants)
         let barCategory = Category(name: "Bars", image: "kayaking.JPG", pointsOfInterest: restaurants)
         let adventuresCategory = Category(name: "Adventures", image: "kayaking.JPG", pointsOfInterest: restaurants)
         let fitnessCategory = Category(name: "Fitness", image: "kayaking.JPG", pointsOfInterest: restaurants)
         let trailsCategory = Category(name: "Trails", image: "kayaking.JPG", pointsOfInterest: restaurants)
-        categories += [restaurantCategory, beachesCategory, hotelCategory, barCategory, adventuresCategory, fitnessCategory, trailsCategory]
+        categories += [beachesCategory, hotelCategory, barCategory, adventuresCategory, fitnessCategory, trailsCategory]
         self.mainMenuTableView.reloadData()
-        return categories
+//        print(restaurants.count)
     }
     
     
     func createRestaurants() {
         
-        FourSquareService.searchVenues("Restaurants") { (success, data) -> () in
+        FourSquareService.searchVenues("restaurant") { (success, data) -> () in
             if let data =  data {
                 FourSquareService.parseVenueResponse(data, completion: { (success, venues) -> () in
                     if let venues = venues {
                         NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
+                            print(venues)
                             self.restaurants = venues
-                            self.createCategories()
+                            let restaurantCategory = Category(name: "Restaurants", image: "dining.JPG", pointsOfInterest: self.restaurants)
+                            self.categories.append(restaurantCategory)
+                            self.mainMenuTableView.reloadData()
+
+                            
                         })
                     }
                 })
@@ -99,12 +109,10 @@ class CategoriesTableViewController: UITableViewController {
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        
         return 1
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return categories.count
     }
     
@@ -118,7 +126,6 @@ class CategoriesTableViewController: UITableViewController {
         } else {
             
             cell.backgroundColor = UIColor.clearColor()
-
         }
         
         let selectedActivity = self.categories[indexPath.row]
@@ -136,7 +143,7 @@ class CategoriesTableViewController: UITableViewController {
                 let indexPath = self.tableView.indexPathForSelectedRow
                 if let selectedRow = indexPath?.row {
                     let selectedCategory = self.categories[selectedRow]
-                    CategoryItemsTableViewController.selectedCategory? = selectedCategory
+                    CategoryItemsTableViewController.selectedCategory = selectedCategory
                     
 //                    CategoryItemsTableViewController.selectedCategory?.pointsOfInterest = self.restaurants
 
