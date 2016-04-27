@@ -10,3 +10,6 @@ This is an open source project. So if you are interested in collaborating please
 [Visit the App Website](https://launchkit.io/websites/u4WrUcER8ko/)
 
 [Find me on linkeIn](https://www.linkedin.com/in/albertovegagonzalez)
+
+
+![alt text](https://github.com/Alberto-Vega/SanCarlosMex/blob/master/SanCarlosMex/Images.xcassets/AppIcon.appiconset/appIcon%403x.png "Logo Title Text 1")
