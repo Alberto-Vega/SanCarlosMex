@@ -27,6 +27,8 @@ class CategoriesTableViewController: UITableViewController, SegueHandlerType {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        self.createCategories()
+
         setupTableViewBackGroundPhoto()
 //        createRestaurants()
         createBeaches()
@@ -47,8 +49,6 @@ class CategoriesTableViewController: UITableViewController, SegueHandlerType {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        self.createCategories()
-
 
     }
     override func didReceiveMemoryWarning() {
@@ -59,12 +59,12 @@ class CategoriesTableViewController: UITableViewController, SegueHandlerType {
     
     func createCategories () {
         
-        let beachesCategory = Category(name: "Beaches", image: "kayaking.JPG", pointsOfInterest: beaches)
+        let beachesCategory = Category(name: "Beach", image: "kayaking.JPG", pointsOfInterest: beaches)
 //        print(restaurantCategory.pointsOfInterest?.count)
         let hotelCategory = Category(name: "Hotels", image: "kayaking.JPG", pointsOfInterest: restaurants)
         let barCategory = Category(name: "Bars", image: "kayaking.JPG", pointsOfInterest: restaurants)
         let adventuresCategory = Category(name: "Adventures", image: "kayaking.JPG", pointsOfInterest: restaurants)
-        let fitnessCategory = Category(name: "Fitness", image: "kayaking.JPG", pointsOfInterest: restaurants)
+        let fitnessCategory = Category(name: "fitness", image: "kayaking.JPG", pointsOfInterest: restaurants)
         let trailsCategory = Category(name: "Trails", image: "kayaking.JPG", pointsOfInterest: restaurants)
         categories += [beachesCategory, hotelCategory, barCategory, adventuresCategory, fitnessCategory, trailsCategory]
         self.mainMenuTableView.reloadData()

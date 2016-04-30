@@ -11,7 +11,8 @@ import MapKit
 
 class PointOfInterest {
     
-    let name, shortDescription, address, features, hours, notes: String
+    let name, shortDescription,features, hours, notes: String
+    var address: String
     var image:UIImage?
     let coordinate: CLLocationCoordinate2D?
     

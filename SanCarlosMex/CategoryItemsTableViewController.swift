@@ -21,11 +21,28 @@ class CategoryItemsTableViewController: UITableViewController, SegueHandlerType 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        createRestaurants()
         print("The category passed is \(selectedCategory?.name)")
         guard let  searchCategory = selectedCategory?.name else {
             print("No valid category to search")
             return
+        }
+        FourSquareService.searchVenues(searchCategory) { (success, data) -> () in
+            if let data =  data {
+                FourSquareService.parseVenueResponse(data, completion: { (success, venues) -> () in
+                    if let venues = venues {
+                        
+                        NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
+                            print(venues)
+                            
+                            self.venuesFromFourSquare = venues
+                            
+                            self.itemTableView.reloadData()
+                            
+                            
+                        })
+                    }
+                })
+            }
         }
 //        FourSquareService.searchVenues("Restaurants") { (success, data) in
 //            guard let data = data else {
@@ -51,27 +68,8 @@ class CategoryItemsTableViewController: UITableViewController, SegueHandlerType 
     }
     
     
-    func createRestaurants() {
-        
-        FourSquareService.searchVenues("restaurants") { (success, data) -> () in
-            if let data =  data {
-                FourSquareService.parseVenueResponse(data, completion: { (success, venues) -> () in
-                    if let venues = venues {
-                        
-                        NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
-                            print(venues)
-                            
-                            self.venuesFromFourSquare = venues
+    
 
-                            self.itemTableView.reloadData()
-                            
-                            
-                        })
-                    }
-                })
-            }
-        }
-    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
