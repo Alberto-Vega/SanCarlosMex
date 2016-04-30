@@ -8,7 +8,11 @@
 
 import UIKit
 
-class ActivitiesTableViewController: UITableViewController {
+class ActivitiesTableViewController: UITableViewController, SegueHandlerType {
+    
+    enum SegueIdentifier: String {
+        case DetailViewController
+    }
     
     @IBOutlet var mainMenuTableView: UITableView!
     var activities = [Activity]()
@@ -66,19 +70,16 @@ class ActivitiesTableViewController: UITableViewController {
         
         let birdWatching = Activity(name: "Bird Watching", image:UIImage(named:"cactusWren.jpg"))
         activities.append(birdWatching)
-            
-        
         return activities
     }
     
     // MARK: TableView
     
     func setupTableViewBackGroundPhoto() {
-        
         mainMenuTableView.backgroundView = UIImageView(image: UIImage(named: "dessertAndOcean.jpeg"))
         mainMenuTableView.backgroundView!.contentMode = UIViewContentMode.ScaleAspectFill
     }
-
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
@@ -88,9 +89,8 @@ class ActivitiesTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
         let cell = tableView.dequeueReusableCellWithIdentifier("ActivityListItem", forIndexPath: indexPath)
-
+        
         if(indexPath.row % 2 == 0) {
             cell.backgroundColor = UIColor.clearColor()
         } else {
@@ -102,13 +102,14 @@ class ActivitiesTableViewController: UITableViewController {
         activityNameTextLabel.text = selectedActivity.name
         return cell
     }
-   
+    
     //     MARK: - Navigation
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-        if segue.identifier == "DetailViewController" {
-            
+        let segueIdentifier = segueIdentifierForSegue(segue)
+        switch segueIdentifier {
+        case .DetailViewController:
             if let dvc = segue.destinationViewController as? DetailViewController {
                 
                 let indexPath = self.tableView.indexPathForSelectedRow

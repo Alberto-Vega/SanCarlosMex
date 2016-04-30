@@ -10,7 +10,11 @@ import UIKit
 import MapKit
 
 
-class CategoriesTableViewController: UITableViewController {
+class CategoriesTableViewController: UITableViewController, SegueHandlerType {
+    
+    enum SegueIdentifier: String {
+        case ShowCategoryItems
+    }
     
     @IBOutlet var mainMenuTableView: UITableView!
     
@@ -24,7 +28,7 @@ class CategoriesTableViewController: UITableViewController {
         
         super.viewDidLoad()
         setupTableViewBackGroundPhoto()
-        createRestaurants()
+//        createRestaurants()
         createBeaches()
 
 
@@ -70,7 +74,7 @@ class CategoriesTableViewController: UITableViewController {
     
     func createRestaurants() {
         
-        FourSquareService.searchVenues("restaurant") { (success, data) -> () in
+        FourSquareService.searchVenues("restaurants") { (success, data) -> () in
             if let data =  data {
                 FourSquareService.parseVenueResponse(data, completion: { (success, venues) -> () in
                     if let venues = venues {
@@ -137,25 +141,15 @@ class CategoriesTableViewController: UITableViewController {
     //     MARK: - Navigation
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "ShowCategoryItems" {
+        
+        let segueIdentifier = segueIdentifierForSegue(segue)
+        switch segueIdentifier {
+        case .ShowCategoryItems:
             if let CategoryItemsTableViewController = segue.destinationViewController as? CategoryItemsTableViewController {
-                
                 let indexPath = self.tableView.indexPathForSelectedRow
                 if let selectedRow = indexPath?.row {
                     let selectedCategory = self.categories[selectedRow]
                     CategoryItemsTableViewController.selectedCategory = selectedCategory
-                    
-//                    CategoryItemsTableViewController.selectedCategory?.pointsOfInterest = self.restaurants
-
-            
-//            if let tabBarController = segue.destinationViewController as? UITabBarController {
-//                if let categoryItemsTableViewController = tabBarController.viewControllers![0] as? CategoryItemsTableViewController {
-//                    if let indexPath = self.tableView.indexPathForSelectedRow {
-//                    let selectedCategory =  self.categories[indexPath.row]
-//                    
-//                    categoryItemsTableViewController.selectedCategory = selectedCategory
-//                    }
-//                    
                 }
             }
         }

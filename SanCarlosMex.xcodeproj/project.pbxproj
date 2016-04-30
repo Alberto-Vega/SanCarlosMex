@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF109B811CD46A6200D19B8A /* SegueHandlerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF109B801CD46A6200D19B8A /* SegueHandlerType.swift */; };
 		BF35D8F81B2E8A6000FD8E93 /* facebook-flat-vector-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = BF35D8F71B2E8A6000FD8E93 /* facebook-flat-vector-logo.png */; };
 		BF35D8FA1B2E8A6700FD8E93 /* new-twitter-logo-vector.png in Resources */ = {isa = PBXBuildFile; fileRef = BF35D8F91B2E8A6700FD8E93 /* new-twitter-logo-vector.png */; };
 		BF3FF7631B2BF4D40024D8A9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3FF7621B2BF4D40024D8A9 /* DetailViewController.swift */; };
@@ -57,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF109B801CD46A6200D19B8A /* SegueHandlerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SegueHandlerType.swift; path = SanCarlosMexTests/SegueHandlerType.swift; sourceTree = SOURCE_ROOT; };
 		BF35D8F71B2E8A6000FD8E93 /* facebook-flat-vector-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook-flat-vector-logo.png"; sourceTree = "<group>"; };
 		BF35D8F91B2E8A6700FD8E93 /* new-twitter-logo-vector.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "new-twitter-logo-vector.png"; sourceTree = "<group>"; };
 		BF3FF7621B2BF4D40024D8A9 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 		BFEAEE141B2B912F00C4789D /* SanCarlosMex */ = {
 			isa = PBXGroup;
 			children = (
+				BF109B801CD46A6200D19B8A /* SegueHandlerType.swift */,
 				BF5E37631C4221BA00CD4B50 /* FourSquareAPI */,
 				BFEAEE171B2B912F00C4789D /* AppDelegate.swift */,
 				BFEAEE3B1B2BBC5900C4789D /* Controllers */,
@@ -396,6 +399,7 @@
 				BFF74F851BD08FF60028C638 /* PointOfInterest.swift in Sources */,
 				BF85AE6F1C338B4B004292E6 /* MapViewController.m in Sources */,
 				BF8D97921C0ECA860024C71D /* POIDetailViewController.swift in Sources */,
+				BF109B811CD46A6200D19B8A /* SegueHandlerType.swift in Sources */,
 				BF4E4F501BD35D3C00347CA1 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

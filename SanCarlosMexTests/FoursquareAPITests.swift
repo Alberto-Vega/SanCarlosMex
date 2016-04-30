@@ -23,6 +23,8 @@ class FoursquareAPITests: XCTestCase {
     
     func testSearchVenuesSuccess() {
         let expectation = expectationWithDescription("Expecting the network call to suceed")
+        let dataExpectation = expectationWithDescription("Expecting the network call to return data")
+
         
         FourSquareService.searchVenues("Restaurants") { (success, data) -> () in
             if success {
@@ -30,9 +32,15 @@ class FoursquareAPITests: XCTestCase {
             } else {
                 XCTFail("Network call failed!")
             }
+            if data != nil {
+                dataExpectation.fulfill()
+            } else {
+                XCTFail("Data is nil")
+            }
         }
         waitForExpectationsWithTimeout(3, handler: nil)
     }
+    
     
     func testParseVenueResponseFail() {
         //Tests the parse function to fail
