@@ -64,10 +64,6 @@ class ActivitiesTableViewController: UITableViewController {
         let natureWatching = Activity(name: "Nature Watching", image: UIImage(named: "delfines.jpg"))
         activities.append(natureWatching)
         
-        let birdWatching = Activity(name: "Bird Watching", image:UIImage(named:"cactusWren.jpg"))
-        activities.append(birdWatching)
-            
-        
         return activities
     }
     
@@ -75,7 +71,7 @@ class ActivitiesTableViewController: UITableViewController {
     
     func setupTableViewBackGroundPhoto() {
         
-        mainMenuTableView.backgroundView = UIImageView(image: UIImage(named: "dessertAndOcean.jpeg"))
+        mainMenuTableView.backgroundView = UIImageView(image: UIImage(named: "piedrasPintas.jpg"))
         mainMenuTableView.backgroundView!.contentMode = UIViewContentMode.ScaleAspectFill
     }
 
