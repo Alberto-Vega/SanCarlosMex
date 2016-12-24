@@ -34,35 +34,35 @@ class CategoryItemsTableViewController: UITableViewController {
     func setupTableViewBackGroundPhoto() {
         
         itemTableView.backgroundView = UIImageView(image: UIImage(named: "playaAlgodones.jpg"))
-        itemTableView.backgroundView!.contentMode = UIViewContentMode.ScaleAspectFill
+        itemTableView.backgroundView!.contentMode = UIViewContentMode.scaleAspectFill
     }
     
     
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         
         return 1
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return selectedCategory!.pointsOfInterest!.count
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("CategoryItem", forIndexPath: indexPath)
-        let selectedPointOfInterest = self.selectedCategory?.pointsOfInterest![indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryItem", for: indexPath)
+        let selectedPointOfInterest = self.selectedCategory?.pointsOfInterest![(indexPath as NSIndexPath).row]
         
         
-        if(indexPath.row % 2 == 0) {
-            cell.backgroundColor = UIColor.clearColor()
+        if((indexPath as NSIndexPath).row % 2 == 0) {
+            cell.backgroundColor = UIColor.clear
 
         } else {
             cell.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2);
         }
         
-        cell.detailTextLabel?.backgroundColor = UIColor.clearColor()
-        cell.textLabel?.backgroundColor = UIColor.clearColor()
+        cell.detailTextLabel?.backgroundColor = UIColor.clear
+        cell.textLabel?.backgroundColor = UIColor.clear
         
         let pointOfInterestNameLabel = cell.viewWithTag(2) as! UILabel
         pointOfInterestNameLabel.text = selectedPointOfInterest?.name
@@ -74,11 +74,11 @@ class CategoryItemsTableViewController: UITableViewController {
     
     // MARK: - Navigation
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "POIDetailViewController" {
-            let POIDetailVC = segue.destinationViewController as? POIDetailViewController
+            let POIDetailVC = segue.destination as? POIDetailViewController
             let indexPath = self.itemTableView.indexPathForSelectedRow
-            if let selectedRow = indexPath?.row {
+            if let selectedRow = (indexPath as NSIndexPath?)?.row {
                 let selectedPOI = self.selectedCategory?.pointsOfInterest![selectedRow]
                 POIDetailVC?.selectedPOI = selectedPOI
             }

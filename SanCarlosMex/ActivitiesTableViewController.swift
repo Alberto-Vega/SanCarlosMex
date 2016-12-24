@@ -72,28 +72,28 @@ class ActivitiesTableViewController: UITableViewController {
     func setupTableViewBackGroundPhoto() {
         
         mainMenuTableView.backgroundView = UIImageView(image: UIImage(named: "piedrasPintas.jpg"))
-        mainMenuTableView.backgroundView!.contentMode = UIViewContentMode.ScaleAspectFill
+        mainMenuTableView.backgroundView!.contentMode = UIViewContentMode.scaleAspectFill
     }
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return activities.count
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("ActivityListItem", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ActivityListItem", for: indexPath)
 
-        if(indexPath.row % 2 == 0) {
-            cell.backgroundColor = UIColor.clearColor()
+        if((indexPath as NSIndexPath).row % 2 == 0) {
+            cell.backgroundColor = UIColor.clear
         } else {
-            cell.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2);
+            cell.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2)
         }
         
-        let selectedActivity = self.activities[indexPath.row]
+        let selectedActivity = self.activities[(indexPath as NSIndexPath).row]
         let activityNameTextLabel = cell.viewWithTag(1) as! UILabel
         activityNameTextLabel.text = selectedActivity.name
         return cell
@@ -101,14 +101,14 @@ class ActivitiesTableViewController: UITableViewController {
    
     //     MARK: - Navigation
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "DetailViewController" {
             
-            if let dvc = segue.destinationViewController as? DetailViewController {
+            if let dvc = segue.destination as? DetailViewController {
                 
                 let indexPath = self.tableView.indexPathForSelectedRow
-                if let selectedRow = indexPath?.row {
+                if let selectedRow = (indexPath as NSIndexPath?)?.row {
                     
                     let selectedActivity = self.activities[selectedRow]
                     dvc.selectedActivity = selectedActivity

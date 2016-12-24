@@ -29,7 +29,7 @@ class DetailViewController: UIViewController {
     }
     
     func setupLabelsAndButtons() {
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Action, target: self, action: "shareTapped")
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(DetailViewController.shareTapped))
         self.activityNameLabel.text = self.selectedActivity?.name
         self.photoDescriptionLabel.text = self.selectedActivity?.createAndSelectARandomDescription()
         self.activityPhoto.image = self.selectedActivity?.image
@@ -40,30 +40,30 @@ class DetailViewController: UIViewController {
     
     func shareTapped() {
         let vc = UIActivityViewController(activityItems: [activityPhoto.image!], applicationActivities: [])
-        presentViewController(vc, animated: true, completion: nil)
+        present(vc, animated: true, completion: nil)
     }
     
     func shareOnFacebookTapped()  {
         let vc = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
-        vc.setInitialText("Check out this beautiful place! It's San Carlos, Mexico")
-        vc.addImage(activityPhoto.image!)
-        vc.addURL(NSURL(string: "http://www.discoversancarlos.org/home"))
-        presentViewController(vc, animated: true, completion: nil)
+        vc?.setInitialText("Check out this beautiful place! It's San Carlos, Mexico")
+        vc?.add(activityPhoto.image!)
+        vc?.add(URL(string: "http://www.discoversancarlos.org/home"))
+        present(vc!, animated: true, completion: nil)
     }
     
     func shareOnTwitterTapped() {
         let vc = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
-        vc.setInitialText("Check out this beautiful place! It's San Carlos, Mexico")
-        vc.addImage(activityPhoto.image!)
-        vc.addURL(NSURL(string: "http://www.discoversancarlos.org/home"))
-        presentViewController(vc, animated: true, completion: nil)
+        vc?.setInitialText("Check out this beautiful place! It's San Carlos, Mexico")
+        vc?.add(activityPhoto.image!)
+        vc?.add(URL(string: "http://www.discoversancarlos.org/home"))
+        present(vc!, animated: true, completion: nil)
     }
     
-    @IBAction func shareOnFacebookButtonPressed(sender: UIButton) {
+    @IBAction func shareOnFacebookButtonPressed(_ sender: UIButton) {
         shareOnFacebookTapped()
     }
     
-    @IBAction func shareOnTwitterButtonPressed(sender: AnyObject) {
+    @IBAction func shareOnTwitterButtonPressed(_ sender: AnyObject) {
         shareOnTwitterTapped()
     }
 }

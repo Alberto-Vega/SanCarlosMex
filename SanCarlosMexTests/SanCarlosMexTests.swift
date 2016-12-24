@@ -44,11 +44,9 @@ setupPointsOfInterest()
             XCTAssertNotNil(potentialCategory)
     }
     
-    
-    func setupPointsOfInterest() {
-        
     // Helper function to test CategoryInitialization.
-        
+    func setupPointsOfInterest() {
+    
         let potentialPointOfInterest = PointOfInterest(name: "No Coordinate POI", shortDescription: "No Coordinate POI", address: "Cupertino Road 123, Seattle, WA", features: "No Coordinate POI", hours: "No Coordinate POI", notes: "No Coordinate POI", image: "NoCoordinatePOI.jpg", coordinate: CLLocationCoordinate2D(latitude: 41.40338, longitude: 2.17403))
         arrayOfTestPOI.append(potentialPointOfInterest)
     }
@@ -83,7 +81,7 @@ setupPointsOfInterest()
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measureBlock {
+        self.measure {
             // Put the code you want to measure the time of here.
         }
     }

@@ -35,7 +35,7 @@ class CategoriesTableViewController: UITableViewController {
 
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         print("In view didApper we have pointsofInterest: \(categories[0].pointsOfInterest!.count)")
     }
@@ -82,33 +82,33 @@ class CategoriesTableViewController: UITableViewController {
     func setupTableViewBackGroundPhoto() {
         
         mainMenuTableView.backgroundView = UIImageView(image: UIImage(named: "piedrasPintas.jpg"))
-        mainMenuTableView.backgroundView!.contentMode = UIViewContentMode.ScaleAspectFill
+        mainMenuTableView.backgroundView!.contentMode = UIViewContentMode.scaleAspectFill
     }
     
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         
         return 1
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return categories.count
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("CategoryListItem", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryListItem", for: indexPath)
         
-        if(indexPath.row % 2 == 0) {
+        if((indexPath as NSIndexPath).row % 2 == 0) {
             
             cell.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2)
         } else {
             
-            cell.backgroundColor = UIColor.clearColor()
+            cell.backgroundColor = UIColor.clear
 
         }
         
-        let selectedActivity = self.categories[indexPath.row]
+        let selectedActivity = self.categories[(indexPath as NSIndexPath).row]
         let activityNameTextLabel = cell.viewWithTag(1) as! UILabel
         activityNameTextLabel.text = selectedActivity.name
         return cell
@@ -116,12 +116,12 @@ class CategoriesTableViewController: UITableViewController {
     
     //     MARK: - Navigation
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowCategoryItems" {
-            if let CategoryItemsTableViewController = segue.destinationViewController as? CategoryItemsTableViewController {
+            if let CategoryItemsTableViewController = segue.destination as? CategoryItemsTableViewController {
                 
                 let indexPath = self.tableView.indexPathForSelectedRow
-                if let selectedRow = indexPath?.row {
+                if let selectedRow = (indexPath as NSIndexPath?)?.row {
                     let selectedCategory = self.categories[selectedRow]
                     CategoryItemsTableViewController.selectedCategory = selectedCategory
             
